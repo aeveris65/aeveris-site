@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Privacy Notice — AEVERIS</title>
+<meta name="description" content="AEVERIS privacy notice: no cookies, no third-party sharing, a single functional language preference in localStorage, and Vercel hosting logs processed under legitimate interest." />
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Michroma&family=Rajdhani:wght@400;500;600&family=Montserrat:wght@400;500&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+<style>
+/* ============================================================
+   1. BRAND TOKENS — AEVERIS Brand Identity v1.0 (shared with index.html)
+   ============================================================ */
+:root{
+  --navy-950:#060E22;  --abyss-900:#0A1633; --navy-800:#0E1B40;
+  --deep-700:#12224C;  --navy-600:#1B2E5A;  --steel-500:#2A3C63;
+  --navy-400:#3B4E78;
+  --slate-600:#566179; --slate-500:#6E7C93; --slate-400:#8B97AB;
+  --silver-300:#AEB8C6;--silver-200:#C9D0DA;--silver-100:#E7EBF1;
+  --white:#F7F9FC;
+  --electric:#2E76FF;
+  --ondaiq:#16C7C0;
+
+  --f-wordmark:'Michroma',sans-serif;
+  --f-display:'Rajdhani',sans-serif;
+  --f-body:'Montserrat',sans-serif;
+  --f-mono:'JetBrains Mono',ui-monospace,monospace;
+
+  --track-wordmark:0.24em;
+  --track-label:0.34em;
+  --gutter:clamp(20px,5vw,72px);
+  --rule:1px solid rgba(42,60,99,.65);
+}
+
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0; background:var(--abyss-900); color:var(--silver-200);
+  font-family:var(--f-body); font-size:16px; line-height:1.7;
+  -webkit-font-smoothing:antialiased; overflow-x:hidden;
+}
+a{color:inherit;text-decoration:none}
+:focus-visible{outline:2px solid var(--electric);outline-offset:3px;border-radius:2px}
+
+.eyebrow{
+  font-family:var(--f-mono); font-size:11px; font-weight:500;
+  letter-spacing:var(--track-label); text-transform:uppercase;
+  color:var(--slate-500);
+}
+.eyebrow--spark{color:var(--electric)}
+.display{
+  font-family:var(--f-display); font-weight:600; line-height:1.05;
+  color:var(--silver-100); letter-spacing:.005em; margin:0;
+}
+
+/* ============================================================
+   2. MASTHEAD (shared with index.html)
+   ============================================================ */
+.masthead{
+  position:fixed; inset:0 0 auto 0; z-index:40;
+  display:flex; align-items:center; justify-content:space-between;
+  padding:18px var(--gutter);
+  background:linear-gradient(to bottom,rgba(10,22,51,.92),rgba(10,22,51,0));
+  backdrop-filter:blur(6px);
+}
+.masthead__mark{display:flex;align-items:center;gap:14px}
+.masthead__mark svg{width:22px;height:auto;display:block}
+.masthead__word{
+  font-family:var(--f-wordmark); font-size:13px;
+  letter-spacing:var(--track-wordmark); color:var(--silver-100);
+}
+.masthead__right{display:flex;align-items:center;gap:28px}
+.masthead__nav{display:flex;gap:30px}
+.masthead__nav a{
+  font-family:var(--f-mono); font-size:11px; letter-spacing:.18em;
+  text-transform:uppercase; color:var(--slate-400); transition:color .25s;
+}
+.masthead__nav a:hover{color:var(--silver-100)}
+
+/* ============================================================
+   3. LEGAL CONTENT
+   ============================================================ */
+.legal{padding:150px var(--gutter) 120px}
+.legal__inner{max-width:740px;margin:0 auto}
+.legal__inner > .eyebrow{display:block;margin-bottom:18px}
+.legal__inner > h1{font-size:clamp(30px,5vw,46px);margin-bottom:14px}
+.legal__meta{
+  font-family:var(--f-mono); font-size:11px; letter-spacing:.12em;
+  text-transform:uppercase; color:var(--slate-500); margin:0 0 56px;
+}
+.legal__section{padding:32px 0;border-top:var(--rule)}
+.legal__section:first-of-type{border-top:none;padding-top:0}
+.legal__section h2{
+  font-family:var(--f-display); font-weight:600; font-size:clamp(19px,2.4vw,24px);
+  color:var(--silver-100); margin:0 0 14px;
+}
+.legal__section p{margin:0 0 14px;font-size:15px;color:var(--slate-400);line-height:1.75;max-width:64ch}
+.legal__section ul{margin:0 0 14px;padding-left:20px;color:var(--slate-400);font-size:15px;line-height:1.75;max-width:64ch}
+.legal__section li{margin-bottom:8px}
+.legal__section p:last-child,.legal__section ul:last-child{margin-bottom:0}
+.legal__section a{color:var(--electric);text-decoration:underline;text-decoration-color:rgba(46,118,255,.4);transition:text-decoration-color .2s}
+.legal__section a:hover{text-decoration-color:var(--electric)}
+.legal__section strong{color:var(--silver-200);font-weight:600}
+
+/* ============================================================
+   4. COLOPHON (shared with index.html)
+   ============================================================ */
+.colophon{
+  display:grid; grid-template-columns:1fr 1fr 1fr; gap:36px 24px;
+  align-items:start; padding:48px var(--gutter); border-top:var(--rule);
+  font-family:var(--f-mono);
+}
+@media(max-width:640px){ .colophon{grid-template-columns:1fr} }
+.colophon a:hover{color:var(--white)}
+.colophon__brand{display:flex;flex-direction:column;gap:16px}
+.colophon__brand-top{display:flex;align-items:center;gap:14px}
+.colophon__brand-top svg{width:26px;height:auto;display:block;flex:none}
+.colophon__brand-top span{
+  font-family:var(--f-wordmark); font-size:17px;
+  letter-spacing:var(--track-wordmark); color:var(--silver-100);
+}
+.colophon__copyright{
+  font-size:11px; letter-spacing:.14em; text-transform:uppercase; color:var(--silver-300);
+}
+.colophon__hq{display:flex;flex-direction:column;gap:8px}
+.colophon__hq-label{
+  font-size:13px; letter-spacing:.22em; text-transform:uppercase; color:var(--silver-100);
+}
+.colophon__hq-line{
+  font-size:12.5px; letter-spacing:.01em; text-transform:none; color:var(--silver-300);
+}
+.colophon__privacy{display:flex}
+.colophon__privacy a{
+  font-size:11px; letter-spacing:.2em; text-transform:uppercase; color:var(--silver-100);
+}
+</style>
+</head>
+<body>
+
+<header class="masthead">
+  <a class="masthead__mark" href="index.html" aria-label="AEVERIS — Home">
+    <svg viewBox="0 0 100 100" aria-hidden="true">
+      <g fill="none" stroke-linecap="round" stroke-width="5.2">
+        <polyline points="16,80 50,14 84,80" stroke="#E7EBF1"/>
+        <polyline points="27,77.5 50,30 73,77.5" stroke="#AEB8C6"/>
+        <polyline points="37.5,75 50,46 62.5,75" stroke="#6E7C93"/>
+      </g>
+      <circle cx="50" cy="79" r="3.4" fill="#2E76FF"/>
+    </svg>
+    <span class="masthead__word">AEVERIS</span>
+  </a>
+  <div class="masthead__right">
+    <nav class="masthead__nav" aria-label="Primary">
+      <a href="index.html">Home</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="legal">
+    <div class="legal__inner">
+      <span class="eyebrow eyebrow--spark">Legal</span>
+      <h1 class="display">Privacy Notice</h1>
+      <p class="legal__meta">Last updated: 4 August 2026</p>
+
+      <div class="legal__section">
+        <h2>1. Who we are</h2>
+        <p>
+          This notice covers the AEVERIS marketing website (this site). AEVERIS
+          designs sovereign, dual-use unmanned undersea systems under the
+          NER•AEON and ONDAIQ identities. For any question about this notice or
+          how we handle information, contact us at
+          <a href="mailto:contact@aeveris.ro">contact@aeveris.ro</a>.
+        </p>
+      </div>
+
+      <div class="legal__section">
+        <h2>2. The short version</h2>
+        <ul>
+          <li>This site sets <strong>no cookies</strong>.</li>
+          <li>We store exactly one thing in your browser: your chosen site language — nothing else.</li>
+          <li>We run <strong>no analytics, no advertising and no third-party trackers</strong>.</li>
+          <li>We do not sell or share data with third parties.</li>
+          <li>Our hosting provider, Vercel, automatically keeps standard technical server logs — this is normal for any website and is explained in Section 5.</li>
+        </ul>
+      </div>
+
+      <div class="legal__section">
+        <h2>3. Cookies</h2>
+        <p>
+          This site does not use cookies of any kind — no session cookies, no
+          analytics cookies, no advertising or retargeting cookies. Because we
+          don't set cookies, there's no cookie banner: there's nothing to ask
+          your consent for.
+        </p>
+      </div>
+
+      <div class="legal__section">
+        <h2>4. Language preference (localStorage)</h2>
+        <p>
+          When you choose English or Romanian using the EN / RO switch, that
+          single choice — the two-letter code <code>en</code> or <code>ro</code> —
+          is saved in your browser's <strong>localStorage</strong> so the site
+          remembers it on your next visit.
+        </p>
+        <p>
+          This value stays on your device. It is never transmitted to us, to
+          Vercel, or to anyone else, and it isn't linked to your identity — it's
+          just a setting, the same as a browser remembering your zoom level.
+          Because it's strictly functional and doesn't track you or identify
+          you, we don't need to ask for your consent to store it. You can clear
+          it at any time by clearing your browser's site data for this domain.
+        </p>
+      </div>
+
+      <div class="legal__section">
+        <h2>5. Hosting and server logs (Vercel)</h2>
+        <p>
+          This site is hosted on <strong>Vercel Inc.</strong> Like effectively
+          every web server on the internet, Vercel's infrastructure
+          automatically records standard technical request logs when your
+          browser loads a page — things like your IP address, browser/user
+          agent string, the page requested, and the timestamp. We don't add
+          any extra tracking on top of this; it's the baseline logging that
+          keeps any website running, secure and debuggable.
+        </p>
+        <p>
+          Vercel processes these logs on the basis of <strong>legitimate
+          interest</strong> (GDPR Article&nbsp;6(1)(f)) — specifically, to operate,
+          secure and troubleshoot the hosting infrastructure and to guard
+          against abuse. We do not use these logs for marketing, profiling or
+          analytics, and we don't have visibility into individual log entries
+          for that purpose. For details on how Vercel itself handles this
+          data, including retention and its role as infrastructure provider,
+          see
+          <a href="https://vercel.com/legal/privacy-policy" target="_blank" rel="noopener">Vercel's own privacy policy</a>.
+        </p>
+      </div>
+
+      <div class="legal__section">
+        <h2>6. Third parties</h2>
+        <p>
+          The only third party involved in running this site is Vercel, acting
+          purely as our hosting infrastructure (Section 5). We do not use
+          analytics platforms, advertising networks, social media widgets, or
+          any other third-party service that would receive data about your
+          visit. No data from this site is sold, rented, or shared for
+          marketing purposes.
+        </p>
+      </div>
+
+      <div class="legal__section">
+        <h2>7. International transfers</h2>
+        <p>
+          Vercel operates infrastructure globally, so the technical server
+          logs described in Section 5 may be processed outside your country,
+          including in the United States, using the safeguards Vercel
+          describes in its own privacy policy (linked above). We ourselves do
+          not transfer any personal data internationally, because we don't
+          collect any beyond what's described in this notice.
+        </p>
+      </div>
+
+      <div class="legal__section">
+        <h2>8. Your rights under GDPR</h2>
+        <p>
+          If you're in the EU/EEA or UK, you have the right to access,
+          correct, delete, restrict, or object to the processing of your
+          personal data, and the right to data portability and to lodge a
+          complaint with your local data protection authority. In practice,
+          since this site doesn't collect personal data beyond the anonymous
+          hosting logs described above, most of these requests will have
+          nothing to act on — but if you have any concern, email us at
+          <a href="mailto:contact@aeveris.ro">contact@aeveris.ro</a> and
+          we'll respond.
+        </p>
+      </div>
+
+      <div class="legal__section">
+        <h2>9. Changes to this notice</h2>
+        <p>
+          If how this site handles data ever changes, we'll update this page
+          and the "last updated" date at the top.
+        </p>
+      </div>
+
+      <div class="legal__section">
+        <h2>10. Contact</h2>
+        <p>
+          Questions about this notice or about privacy on this site can be
+          sent to <a href="mailto:contact@aeveris.ro">contact@aeveris.ro</a>.
+        </p>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="colophon">
+  <div class="colophon__brand">
+    <div class="colophon__brand-top">
+      <svg viewBox="0 0 100 100" aria-hidden="true">
+        <g fill="none" stroke-linecap="round" stroke-width="5.2">
+          <polyline points="16,80 50,14 84,80" stroke="#E7EBF1"/>
+          <polyline points="27,77.5 50,30 73,77.5" stroke="#AEB8C6"/>
+          <polyline points="37.5,75 50,46 62.5,75" stroke="#6E7C93"/>
+        </g>
+        <circle cx="50" cy="79" r="3.4" fill="#2E76FF"/>
+      </svg>
+      <span>AEVERIS</span>
+    </div>
+    <span class="colophon__copyright">Copyright © 2026 AEVERIS s.r.l.</span>
+  </div>
+  <div class="colophon__hq">
+    <span class="colophon__hq-label">Headquarters</span>
+    <span class="colophon__hq-line">Str. Remus Opreanu 8</span>
+    <span class="colophon__hq-line">900734 Constanța, Romania</span>
+  </div>
+  <div class="colophon__privacy">
+    <a href="index.html">Home</a>
+  </div>
+</footer>
+
+</body>
+</html>
