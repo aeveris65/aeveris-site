@@ -91,17 +91,6 @@ a{color:inherit;text-decoration:none}
 }
 @media(max-width:640px){ .masthead__nav{display:none} }
 
-.langtoggle{display:flex;align-items:center;gap:3px;font-family:var(--f-mono);
-  font-size:11px;letter-spacing:.14em}
-.langtoggle button{
-  background:none;border:none;cursor:pointer;color:var(--slate-500);
-  padding:4px 5px;font:inherit;letter-spacing:inherit;text-transform:uppercase;
-  transition:color .2s;
-}
-.langtoggle button:hover{color:var(--silver-200)}
-.langtoggle button.is-active{color:var(--silver-100)}
-.langtoggle .sep{color:var(--slate-600)}
-
 /* ============================================================
    4. HERO
      a) looping video   b) veil + contours
@@ -573,16 +562,11 @@ a{color:inherit;text-decoration:none}
   </div>
   <div class="masthead__right">
     <nav class="masthead__nav" aria-label="Primary">
-      <a href="#platform" data-i18n="nav.platform">Platform</a>
-      <a href="#brands" data-i18n="nav.brands">Brands</a>
-      <a href="#available-now" data-i18n="nav.services">Services</a>
-      <a href="#contact" class="masthead__nav--outline" data-i18n="nav.contact">Contact</a>
+      <a href="#platform">Platform</a>
+      <a href="#brands">Brands</a>
+      <a href="#available-now">Services</a>
+      <a href="#contact" class="masthead__nav--outline">Contact</a>
     </nav>
-    <div class="langtoggle" role="group" aria-label="Language">
-      <button type="button" data-lang="en" class="is-active">EN</button>
-      <span class="sep" aria-hidden="true">/</span>
-      <button type="button" data-lang="ro">RO</button>
-    </div>
   </div>
 </header>
 
@@ -627,15 +611,15 @@ a{color:inherit;text-decoration:none}
     <!-- (d) type -->
     <div class="hero__type">
       <h1 class="hero__wordmark">AEVERIS</h1>
-      <p class="hero__tagline" id="heroTagline" data-i18n="hero.tagline">Intelligence that endures</p>
-      <p class="hero__sub" data-i18n="hero.sub">
+      <p class="hero__tagline" id="heroTagline">Intelligence that endures</p>
+      <p class="hero__sub">
         We engineer end-to-end, dual-use unmanned systems for the world's
         most critical environments.
       </p>
       <div class="divider"><span class="divider__spark"></span></div>
     </div>
 
-    <div class="scrollcue" data-i18n="scrollcue">Scroll</div>
+    <div class="scrollcue">Scroll</div>
   </section>
 
   <!-- ===================== PLATFORM ===================== -->
@@ -643,9 +627,9 @@ a{color:inherit;text-decoration:none}
     <span class="band__spark" aria-hidden="true"></span>
     <div class="band__inner">
       <div class="band__head reveal reveal--stagger">
-        <span class="eyebrow eyebrow--spark" data-i18n="platform.eyebrow">The essence</span>
-        <h2 class="display" data-i18n="platform.h2">Substance over hype.</h2>
-        <p data-i18n="platform.p">
+        <span class="eyebrow eyebrow--spark">The essence</span>
+        <h2 class="display">Substance over hype.</h2>
+        <p>
           AEVERIS develops the core intelligence architecture for unmanned
           undersea operations - advancing toward full autonomy, in any
           environment. Anchored in the Black Sea, not simulation. Built for
@@ -653,13 +637,13 @@ a{color:inherit;text-decoration:none}
         </p>
       </div>
       <div class="attrs reveal">
-        <span data-i18n="attr.sovereign">Sovereign</span>
+        <span>Sovereign</span>
         <span class="attrs__dot" aria-hidden="true"></span>
-        <span data-i18n="attr.advanced">Advanced</span>
+        <span>Advanced</span>
         <span class="attrs__dot" aria-hidden="true"></span>
-        <span data-i18n="attr.precise">Precise</span>
+        <span>Precise</span>
         <span class="attrs__dot" aria-hidden="true"></span>
-        <span data-i18n="attr.enduring">Enduring</span>
+        <span>Enduring</span>
       </div>
     </div>
   </section>
@@ -669,45 +653,45 @@ a{color:inherit;text-decoration:none}
     <span class="band__spark" aria-hidden="true"></span>
     <div class="band__inner">
       <div class="band__head reveal reveal--stagger">
-        <span class="eyebrow eyebrow--spark" data-i18n="advantage.eyebrow">The advantage</span>
-        <h2 class="display" data-i18n="advantage.h2">Building with an edge that holds where it matters most</h2>
+        <span class="eyebrow eyebrow--spark">The advantage</span>
+        <h2 class="display">Building with an edge that holds where it matters most</h2>
       </div>
       <div class="advgrid">
         <article class="advcard reveal">
           <span class="advcard__num">01</span>
           <div class="advcard__bar"></div>
-          <h3 data-i18n="advantage.1.h">Sovereign concept and execution</h3>
-          <p data-i18n="advantage.1.p">Full design, software, hardware, and IP ownership based in Romania, driving the development of a fully localized production capability.</p>
+          <h3>Sovereign concept and execution</h3>
+          <p>Full design, software, hardware, and IP ownership based in Romania, driving the development of a fully localized production capability.</p>
         </article>
         <article class="advcard reveal">
           <span class="advcard__num">02</span>
           <div class="advcard__bar"></div>
-          <h3 data-i18n="advantage.2.h">Optimized Total Cost of Ownership</h3>
-          <p data-i18n="advantage.2.p">A modular architecture paired with adaptable payloads minimizes per-vehicle capital expenditure while maximizing mission recovery rates.</p>
+          <h3>Optimized Total Cost of Ownership</h3>
+          <p>A modular architecture paired with adaptable payloads minimizes per-vehicle capital expenditure while maximizing mission recovery rates.</p>
         </article>
         <article class="advcard reveal">
           <span class="advcard__num">03</span>
           <div class="advcard__bar"></div>
-          <h3 data-i18n="advantage.3.h">Modular Field Repairability</h3>
-          <p data-i18n="advantage.3.p">Designed for rapid, plug-and-play module replacement—eliminating downtime and preserving the primary asset.</p>
+          <h3>Modular Field Repairability</h3>
+          <p>Designed for rapid, plug-and-play module replacement—eliminating downtime and preserving the primary asset.</p>
         </article>
         <article class="advcard reveal">
           <span class="advcard__num">04</span>
           <div class="advcard__bar"></div>
-          <h3 data-i18n="advantage.4.h">Operational Heritage</h3>
-          <p data-i18n="advantage.4.p">An architecture grounded in real-world mine countermeasures (MCM) and hostile undersea operations.</p>
+          <h3>Operational Heritage</h3>
+          <p>An architecture grounded in real-world mine countermeasures (MCM) and hostile undersea operations.</p>
         </article>
         <article class="advcard reveal">
           <span class="advcard__num">05</span>
           <div class="advcard__bar"></div>
-          <h3 data-i18n="advantage.5.h">Scalable Dual-Use Evolution</h3>
-          <p data-i18n="advantage.5.p">Purpose-built for both strategic naval defense and commercial subsea inspection, backed by a clear ROV → AUV roadmap.</p>
+          <h3>Scalable Dual-Use Evolution</h3>
+          <p>Purpose-built for both strategic naval defense and commercial subsea inspection, backed by a clear ROV → AUV roadmap.</p>
         </article>
         <article class="advcard reveal">
           <span class="advcard__num">06</span>
           <div class="advcard__bar"></div>
-          <h3 data-i18n="advantage.6.h">Rapid &amp; Flexible Deployment</h3>
-          <p data-i18n="advantage.6.p">Compact form engineered for seamless launch and recovery from small vessels and USVs.</p>
+          <h3>Rapid &amp; Flexible Deployment</h3>
+          <p>Compact form engineered for seamless launch and recovery from small vessels and USVs.</p>
         </article>
       </div>
     </div>
@@ -719,9 +703,9 @@ a{color:inherit;text-decoration:none}
     <div class="brands__parallax" aria-hidden="true"></div>
     <div class="band__inner">
       <div class="band__head reveal reveal--stagger">
-        <span class="eyebrow eyebrow--spark" data-i18n="brands.eyebrow">Architecture</span>
-        <h2 class="display" data-i18n="brands.h2">One Core Platform. Dual-Domain Mastery.</h2>
-        <p data-i18n="brands.p">
+        <span class="eyebrow eyebrow--spark">Architecture</span>
+        <h2 class="display">One Core Platform. Dual-Domain Mastery.</h2>
+        <p>
           Two missions, two identities. Proven in defense and applied in the
           civil domain.
         </p>
@@ -730,24 +714,24 @@ a{color:inherit;text-decoration:none}
         <article class="brandcard reveal">
           <div class="brandcard__bar"></div>
           <h3 class="brandcard__name">NER<span class="brandcard__spark" aria-hidden="true"></span>AEON</h3>
-          <p class="brandcard__motto" data-i18n="nereon.motto">Vigil et Ultor</p>
-          <p data-i18n="nereon.p">
+          <p class="brandcard__motto">Vigil et Ultor</p>
+          <p>
             <span class="mark-neraeon">NERAEON</span> is a sovereign family of intelligent unmanned undersea systems
             for mine countermeasures. Starting in the Black Sea. No crew, no
             divers, no ships in the danger zone.
           </p>
-          <p class="brandcard__role brandcard__role--tag" data-i18n="nereon.role">Identify · Eliminate · Protect</p>
+          <p class="brandcard__role brandcard__role--tag">Identify · Eliminate · Protect</p>
         </article>
         <article class="brandcard brandcard--ondaiq reveal">
           <div class="brandcard__bar"></div>
           <h3 class="brandcard__name">ONDA<span class="brandcard__spark" aria-hidden="true"></span>IQ</h3>
-          <p class="brandcard__motto" data-i18n="ondaiq.motto">The depths, understood.</p>
-          <p data-i18n="ondaiq.p">
+          <p class="brandcard__motto">The depths, understood.</p>
+          <p>
             <span class="mark-ondaiq">ONDAIQ</span> is an uncrewed undersea intelligence system that surveys,
             identifies and assesses subsea environments. Turning the depths
             into clear, reliable data, safely and at scale.
           </p>
-          <p class="brandcard__role brandcard__role--tag" data-i18n="ondaiq.role">Survey · Assess · Deliver</p>
+          <p class="brandcard__role brandcard__role--tag">Survey · Assess · Deliver</p>
         </article>
       </div>
     </div>
@@ -758,42 +742,42 @@ a{color:inherit;text-decoration:none}
     <span class="band__spark" aria-hidden="true"></span>
     <div class="band__inner">
       <div class="band__head reveal reveal--stagger">
-        <span class="eyebrow eyebrow--teal" data-i18n="applications.eyebrow">Applications</span>
-        <h2 class="display" data-i18n="applications.h2">Services and Mission Critical Applications</h2>
-        <p data-i18n="applications.p">
+        <span class="eyebrow eyebrow--teal">Applications</span>
+        <h2 class="display">Services and Mission Critical Applications</h2>
+        <p>
           One agile modular platform for full-depth intelligence.
         </p>
       </div>
       <div class="applist">
         <article class="approw reveal">
           <span class="approw__marker" aria-hidden="true"></span>
-          <h3 data-i18n="applications.1.h">Critical Infrastructure Protection</h3>
-          <p data-i18n="applications.1.p">Subsea cable and pipeline monitoring, threat detection, and asset integrity.</p>
+          <h3>Critical Infrastructure Protection</h3>
+          <p>Subsea cable and pipeline monitoring, threat detection, and asset integrity.</p>
         </article>
         <article class="approw reveal">
           <span class="approw__marker" aria-hidden="true"></span>
-          <h3 data-i18n="applications.2.h">Offshore Energy &amp; Resources</h3>
-          <p data-i18n="applications.2.p">High-precision inspection data for Black Sea offshore gas fields and subsea structures.</p>
+          <h3>Offshore Energy &amp; Resources</h3>
+          <p>High-precision inspection data for Black Sea offshore gas fields and subsea structures.</p>
         </article>
         <article class="approw reveal">
           <span class="approw__marker" aria-hidden="true"></span>
-          <h3 data-i18n="applications.3.h">Ports &amp; Harbour Security</h3>
-          <p data-i18n="applications.3.p">Rapid hull inspections, quay wall auditing, and seabed anomaly scanning.</p>
+          <h3>Ports &amp; Harbour Security</h3>
+          <p>Rapid hull inspections, quay wall auditing, and seabed anomaly scanning.</p>
         </article>
         <article class="approw reveal">
           <span class="approw__marker" aria-hidden="true"></span>
-          <h3 data-i18n="applications.4.h">Aquaculture Operations</h3>
-          <p data-i18n="applications.4.p">Autonomous net inspection, mooring integrity, and environmental monitoring.</p>
+          <h3>Aquaculture Operations</h3>
+          <p>Autonomous net inspection, mooring integrity, and environmental monitoring.</p>
         </article>
         <article class="approw reveal">
           <span class="approw__marker" aria-hidden="true"></span>
-          <h3 data-i18n="applications.5.h">Hydrographic &amp; Marine Science</h3>
-          <p data-i18n="applications.5.p">High-resolution seabed mapping, bathymetry, and oceanographic research.</p>
+          <h3>Hydrographic &amp; Marine Science</h3>
+          <p>High-resolution seabed mapping, bathymetry, and oceanographic research.</p>
         </article>
         <article class="approw reveal">
           <span class="approw__marker" aria-hidden="true"></span>
-          <h3 data-i18n="applications.6.h">Maritime Law Enforcement</h3>
-          <p data-i18n="applications.6.p">Underwater forensics, anti-smuggling support, and search-and-recovery operations.</p>
+          <h3>Maritime Law Enforcement</h3>
+          <p>Underwater forensics, anti-smuggling support, and search-and-recovery operations.</p>
         </article>
       </div>
     </div>
@@ -810,10 +794,10 @@ a{color:inherit;text-decoration:none}
       <div class="band__head reveal reveal--stagger">
         <div class="ember-banner" id="emberBanner">
           <span class="ember-banner__fill" aria-hidden="true"></span>
-          <span class="ember-banner__label" id="servicesEyebrow" data-i18n="services.eyebrow">Available now</span>
+          <span class="ember-banner__label" id="servicesEyebrow">Available now</span>
         </div>
-        <h2 class="display" data-i18n="services.h2">The platform is in development. The service is available.</h2>
-        <p data-i18n="services.p">
+        <h2 class="display">The platform is in development. The service is available.</h2>
+        <p>
           <span class="mark-ondaiq">ONDA·IQ</span>'s ROV team is dispatchable today for fast, precise underwater inspection.
         </p>
       </div>
@@ -828,7 +812,7 @@ a{color:inherit;text-decoration:none}
             </svg>
           </span>
           <h3><span class="mark-ondaiq">ONDA·IQ</span> ShipCheck</h3>
-          <p data-i18n="services.1.p">Hull, propeller, rudder and sea-chest inspection, with full video and photo report.</p>
+          <p>Hull, propeller, rudder and sea-chest inspection, with full video and photo report.</p>
         </article>
         <article class="approw reveal">
           <span class="approw__icon" aria-hidden="true">
@@ -841,7 +825,7 @@ a{color:inherit;text-decoration:none}
             </svg>
           </span>
           <h3><span class="mark-ondaiq">ONDA·IQ</span> PortCheck</h3>
-          <p data-i18n="services.2.p">Quay, piling and basin inspection, locating and assessing submerged structures and objects.</p>
+          <p>Quay, piling and basin inspection, locating and assessing submerged structures and objects.</p>
         </article>
         <article class="approw reveal">
           <span class="approw__icon" aria-hidden="true">
@@ -852,7 +836,7 @@ a{color:inherit;text-decoration:none}
             </svg>
           </span>
           <h3><span class="mark-ondaiq">ONDA·IQ</span> EmergencyAlert</h3>
-          <p data-i18n="services.3.p">Rapid-response dispatch for underwater incidents: fouled propellers, suspected damage, lost objects.</p>
+          <p>Rapid-response dispatch for underwater incidents: fouled propellers, suspected damage, lost objects.</p>
         </article>
       </div>
     </div>
@@ -866,9 +850,9 @@ a{color:inherit;text-decoration:none}
   <section class="band band--deep contact" id="contact">
     <span class="band__spark" aria-hidden="true"></span>
     <div class="band__inner reveal reveal--stagger">
-      <span class="eyebrow eyebrow--spark" data-i18n="contact.eyebrow">Contact</span>
-      <h2 class="display" style="margin-top:18px" data-i18n="contact.h2">Start a conversation.</h2>
-      <p style="color:var(--slate-400);max-width:46ch;margin:0 auto 10px" data-i18n="contact.p">
+      <span class="eyebrow eyebrow--spark">Contact</span>
+      <h2 class="display" style="margin-top:18px">Start a conversation.</h2>
+      <p style="color:var(--slate-400);max-width:46ch;margin:0 auto 10px">
         Program enquiries, partnerships and technical briefings.
       </p>
       <a class="btn" href="mailto:contact@aeveris.ro">contact@aeveris.ro</a>
@@ -893,15 +877,15 @@ a{color:inherit;text-decoration:none}
       </svg>
       <span>AEVERIS</span>
     </div>
-    <span class="colophon__copyright" data-i18n="footer.copyright">Copyright © 2026 AEVERIS s.r.l.</span>
+    <span class="colophon__copyright">Copyright © 2026 AEVERIS s.r.l.</span>
   </div>
   <div class="colophon__hq">
-    <span class="colophon__hq-label" data-i18n="footer.hq.label">Headquarters</span>
-    <span class="colophon__hq-line" data-i18n="footer.hq.line1">Str. Remus Opreanu 8</span>
-    <span class="colophon__hq-line" data-i18n="footer.hq.line2">900734 Constanța, Romania</span>
+    <span class="colophon__hq-label">Headquarters</span>
+    <span class="colophon__hq-line">Str. Remus Opreanu 8</span>
+    <span class="colophon__hq-line">900734 Constanța, Romania</span>
   </div>
   <div class="colophon__privacy">
-    <a href="privacy.html" data-i18n="footer.privacy">Privacy</a>
+    <a href="privacy.html">Privacy</a>
   </div>
 </footer>
 
@@ -912,133 +896,6 @@ a{color:inherit;text-decoration:none}
      ============================================================ -->
 <script>
 (function(){
-  const I18N = {
-    en: {
-      "nav.platform":"Platform", "nav.brands":"Brands", "nav.services":"Services", "nav.contact":"Contact",
-      "hero.tagline":"Intelligence that endures",
-      "hero.sub":"We engineer end-to-end, dual-use unmanned systems for the world's most critical environments.",
-      "scrollcue":"Scroll",
-      "platform.eyebrow":"The essence",
-      "platform.h2":"Substance over hype.",
-      "platform.p":"AEVERIS develops the core intelligence architecture for unmanned undersea operations - advancing toward full autonomy, in any environment. Anchored in the Black Sea, not simulation. Built for resilience when the stakes are highest.",
-      "attr.sovereign":"Sovereign","attr.advanced":"Advanced","attr.precise":"Precise","attr.enduring":"Enduring",
-      "advantage.eyebrow":"The advantage",
-      "advantage.h2":"Building with an edge that holds where it matters most",
-      "advantage.1.h":"Sovereign concept and execution",
-      "advantage.1.p":"Full design, software, hardware, and IP ownership based in Romania, driving the development of a fully localized production capability.",
-      "advantage.2.h":"Optimized Total Cost of Ownership",
-      "advantage.2.p":"A modular architecture paired with adaptable payloads minimizes per-vehicle capital expenditure while maximizing mission recovery rates.",
-      "advantage.3.h":"Modular Field Repairability",
-      "advantage.3.p":"Designed for rapid, plug-and-play module replacement—eliminating downtime and preserving the primary asset.",
-      "advantage.4.h":"Operational Heritage",
-      "advantage.4.p":"An architecture grounded in real-world mine countermeasures (MCM) and hostile undersea operations.",
-      "advantage.5.h":"Scalable Dual-Use Evolution",
-      "advantage.5.p":"Purpose-built for both strategic naval defense and commercial subsea inspection, backed by a clear ROV → AUV roadmap.",
-      "advantage.6.h":"Rapid & Flexible Deployment",
-      "advantage.6.p":"Compact form engineered for seamless launch and recovery from small vessels and USVs.",
-      "brands.eyebrow":"Architecture",
-      "brands.h2":"One Core Platform. Dual-Domain Mastery.",
-      "brands.p":"Two missions, two identities. Proven in defense and applied in the civil domain.",
-      "nereon.motto":"Vigil et Ultor",
-      "nereon.role":"Identify · Eliminate · Protect",
-      "nereon.p":"<span class=\"mark-neraeon\">NERAEON</span> is a sovereign family of intelligent unmanned undersea systems for mine countermeasures. Starting in the Black Sea. No crew, no divers, no ships in the danger zone.",
-      "ondaiq.motto":"The depths, understood.",
-      "ondaiq.p":"<span class=\"mark-ondaiq\">ONDAIQ</span> is an uncrewed undersea intelligence system that surveys, identifies and assesses subsea environments. Turning the depths into clear, reliable data, safely and at scale.",
-      "ondaiq.role":"Survey · Assess · Deliver",
-      "applications.eyebrow":"Applications",
-      "applications.h2":"Services and Mission Critical Applications",
-      "applications.p":"One agile modular platform for full-depth intelligence.",
-      "applications.1.h":"Critical Infrastructure Protection",
-      "applications.1.p":"Subsea cable and pipeline monitoring, threat detection, and asset integrity.",
-      "applications.2.h":"Offshore Energy & Resources",
-      "applications.2.p":"High-precision inspection data for Black Sea offshore gas fields and subsea structures.",
-      "applications.3.h":"Ports & Harbour Security",
-      "applications.3.p":"Rapid hull inspections, quay wall auditing, and seabed anomaly scanning.",
-      "applications.4.h":"Aquaculture Operations",
-      "applications.4.p":"Autonomous net inspection, mooring integrity, and environmental monitoring.",
-      "applications.5.h":"Hydrographic & Marine Science",
-      "applications.5.p":"High-resolution seabed mapping, bathymetry, and oceanographic research.",
-      "applications.6.h":"Maritime Law Enforcement",
-      "applications.6.p":"Underwater forensics, anti-smuggling support, and search-and-recovery operations.",
-      "services.eyebrow":"Available now",
-      "services.h2":"The platform is in development. The service is available.",
-      "services.p":"<span class=\"mark-ondaiq\">ONDA·IQ</span>'s ROV team is dispatchable today for fast, precise underwater inspection.",
-      "services.1.p":"Hull, propeller, rudder and sea-chest inspection, with full video and photo report.",
-      "services.2.p":"Quay, piling and basin inspection, locating and assessing submerged structures and objects.",
-      "services.3.p":"Rapid-response dispatch for underwater incidents: fouled propellers, suspected damage, lost objects.",
-      "contact.eyebrow":"Contact",
-      "contact.h2":"Start a conversation.",
-      "contact.p":"Program enquiries, partnerships and technical briefings.",
-      "footer.copyright":"Copyright © 2026 AEVERIS s.r.l.",
-      "footer.hq.label":"Headquarters",
-      "footer.hq.line1":"Str. Remus Opreanu 8",
-      "footer.hq.line2":"900734 Constanța, Romania",
-      "footer.privacy":"Privacy"
-    },
-    ro: {
-      "nav.platform":"Platformă", "nav.brands":"Mărci", "nav.services":"Servicii", "nav.contact":"Contact",
-      "hero.tagline":"Inteligență care dăinuie",
-      "hero.sub":"Proiectăm, dezvoltăm și construim sisteme fără pilot, cu dublă utilizare, pentru cele mai critice medii din lume.",
-      "scrollcue":"Derulează",
-      "platform.eyebrow":"Esența",
-      "platform.h2":"Substanță, nu vorbe.",
-      "platform.p":"AEVERIS dezvoltă arhitectura centrală pentru operațiuni subacvatice fără pilot — avansând către autonomie completă, în orice mediu. Fundamentată pe experiența directă în Marea Neagră. Fără simulare. Construită pentru reziliență atunci când miza este maximă.",
-      "attr.sovereign":"Autohtonă","attr.advanced":"Avansată","attr.precise":"Precisă","attr.enduring":"Durabilă",
-      "advantage.eyebrow":"Avantajul",
-      "advantage.h2":"Construim un avantaj care rezistă acolo unde contează cel mai mult",
-      "advantage.1.h":"Concepție și execuție autohtonă",
-      "advantage.1.p":"Design, software, hardware și proprietate intelectuală deținute integral în România, susținând dezvoltarea unei capacități de producție națională.",
-      "advantage.2.h":"Cost total de deținere optimizat",
-      "advantage.2.p":"O arhitectură modulară asociată cu payload-uri adaptabile minimizează cheltuielile de capital per vehicul, maximizând în același timp ratele de recuperare a misiunii.",
-      "advantage.3.h":"Reparabilitate modulară în teren",
-      "advantage.3.p":"Conceput pentru înlocuirea rapidă, plug-and-play, a modulelor — eliminând timpii morți și protejând activul principal.",
-      "advantage.4.h":"Experiență operațională",
-      "advantage.4.p":"O arhitectură fundamentată pe operațiuni reale de combatere a minelor navale (MCM) și operațiuni subacvatice în medii ostile.",
-      "advantage.5.h":"Evoluție scalabilă cu dublă utilizare",
-      "advantage.5.p":"Conceput special atât pentru apărarea navală strategică, cât și pentru inspecția subacvatică comercială, susținut de un plan de parcurs deliberat ROV → AUV.",
-      "advantage.6.h":"Desfășurare rapidă și flexibilă",
-      "advantage.6.p":"Formă compactă, concepută pentru lansare și recuperare fără dificultăți de pe ambarcațiuni mici și USV-uri.",
-      "brands.eyebrow":"Arhitectură",
-      "brands.h2":"O singură platformă centrală. Măiestrie pe două domenii.",
-      "brands.p":"Două misiuni, două identități. Testată în domeniul apărării și aplicată în domeniul civil.",
-      "nereon.motto":"Vigil et Ultor",
-      "nereon.role":"Identifică · Elimină · Protejează",
-      "nereon.p":"<span class=\"mark-neraeon\">NERAEON</span> este o familie autohtonă de sisteme subacvatice inteligente și fără pilot pentru combaterea minelor navale. Începând cu Marea Neagră. Fără echipaj, fără scafandri, fără nave în zona de pericol.",
-      "ondaiq.motto":"Adâncurile, înțelese.",
-      "ondaiq.p":"<span class=\"mark-ondaiq\">ONDAIQ</span> este un sistem subacvatic inteligent și fără pilot care cercetează, identifică și evaluează mediile subacvatice. Transformă adâncurile în date clare și fiabile, în siguranță și la scară largă.",
-      "ondaiq.role":"Cercetează · Evaluează · Livrează",
-      "applications.eyebrow":"Aplicații",
-      "applications.h2":"Servicii și aplicații critice pentru misiune",
-      "applications.p":"O singură platformă modulară și agilă pentru informații pe toată adâncimea.",
-      "applications.1.h":"Protecția infrastructurii critice",
-      "applications.1.p":"Monitorizarea cablurilor și conductelor subacvatice, detectarea amenințărilor și integritatea activelor.",
-      "applications.2.h":"Energie și resurse offshore",
-      "applications.2.p":"Date de inspecție de înaltă precizie pentru zăcămintele offshore de gaz din Marea Neagră și structurile subacvatice.",
-      "applications.3.h":"Securitatea porturilor și danelor",
-      "applications.3.p":"Inspecții rapide ale cocei, auditarea pereților de cheu și scanarea anomaliilor de pe fundul mării.",
-      "applications.4.h":"Operațiuni de acvacultură",
-      "applications.4.p":"Inspecția autonomă a plaselor, integritatea sistemelor de ancorare și monitorizare de mediu.",
-      "applications.5.h":"Hidrografie și știință marină",
-      "applications.5.p":"Cartografiere de înaltă rezoluție a fundului mării, batimetrie și cercetare oceanografică.",
-      "applications.6.h":"Aplicarea legii maritime",
-      "applications.6.p":"Criminalistică subacvatică, sprijin în combaterea contrabandei și operațiuni de căutare și recuperare.",
-      "services.eyebrow":"Disponibil acum",
-      "services.h2":"Platforma este în dezvoltare. Serviciul este disponibil.",
-      "services.p":"Echipa ROV <span class=\"mark-ondaiq\">ONDA·IQ</span> poate fi mobilizată chiar azi pentru inspecții subacvatice rapide și precise.",
-      "services.1.p":"Inspecția carenei, elicei, cârmei și a prizelor de bord (sea-chest), cu raport foto și video complet.",
-      "services.2.p":"Inspecția cheiurilor, pilonilor și bazinelor, cu localizarea și evaluarea structurilor și obiectelor scufundate.",
-      "services.3.p":"Intervenție rapidă pentru incidente subacvatice: elice blocate, suspiciuni de avarii, obiecte pierdute.",
-      "contact.eyebrow":"Contact",
-      "contact.h2":"Aici începem o conversație",
-      "contact.p":"Solicitări de informații despre program, parteneriate și detalii tehnice.",
-      "footer.copyright":"Copyright © 2026 AEVERIS s.r.l.",
-      "footer.hq.label":"Sediu central",
-      "footer.hq.line1":"Str. Remus Opreanu 8",
-      "footer.hq.line2":"900734 Constanța, România",
-      "footer.privacy":"Confidențialitate"
-    }
-  };
-
   const prefersReducedMotion = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
   function typeWriter(el, text, speed){
@@ -1056,57 +913,26 @@ a{color:inherit;text-decoration:none}
     })();
   }
 
-  function apply(lang){
-    const dict = I18N[lang] || I18N.en;
-    document.querySelectorAll('[data-i18n]').forEach(el => {
-      const key = el.getAttribute('data-i18n');
-      const v = dict[key];
-      if(v == null) return;
-      if(el.id === 'heroTagline'){
-        typeWriter(el, v);
-      } else if(el.id === 'servicesEyebrow'){
-        el.__i18nValue = v;
-        const banner = document.getElementById('emberBanner');
-        if(banner && banner.classList.contains('is-in')) typeWriter(el, v);
-      } else {
-        el.innerHTML = v;
-      }
-    });
-    document.documentElement.lang = lang;
-    document.querySelectorAll('.langtoggle button').forEach(b => {
-      b.classList.toggle('is-active', b.dataset.lang === lang);
-    });
-    try{ localStorage.setItem('aeveris-lang', lang); }catch(e){}
-  }
-
-  let start = 'en';
-  try{
-    const saved = localStorage.getItem('aeveris-lang');
-    if(saved && I18N[saved]) start = saved;
-    else if((navigator.language||'').toLowerCase().startsWith('ro')) start = 'ro';
-  }catch(e){}
-  apply(start);
+  const heroTagline = document.getElementById('heroTagline');
+  if(heroTagline) typeWriter(heroTagline, heroTagline.textContent.trim());
 
   const emberBanner = document.getElementById('emberBanner');
   if(emberBanner){
+    const label = document.getElementById('servicesEyebrow');
+    const labelText = label ? label.textContent.trim() : '';
     const emberIO = new IntersectionObserver(entries => {
       entries.forEach(en => {
         if(!en.isIntersecting) return;
         en.target.classList.add('is-in');
-        const label = document.getElementById('servicesEyebrow');
         const delay = prefersReducedMotion ? 0 : 750;
         setTimeout(() => {
-          if(label && label.__i18nValue) typeWriter(label, label.__i18nValue);
+          if(label) typeWriter(label, labelText);
         }, delay);
         emberIO.unobserve(en.target);
       });
     }, {threshold:.4});
     emberIO.observe(emberBanner);
   }
-
-  document.querySelectorAll('.langtoggle button').forEach(b => {
-    b.addEventListener('click', () => apply(b.dataset.lang));
-  });
 })();
 </script>
 
