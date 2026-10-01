@@ -3,639 +3,149 @@
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>AEVERIS — Intelligence that endures</title>
-<meta name="description" content="AEVERIS designs dual-use unmanned undersea systems for the world's most critical environments — built in Romania, starting in the Black Sea." />
-
-<link rel="canonical" href="https://www.aeveris.ro/" />
-<meta name="theme-color" content="#0A1633" />
-<link rel="preconnect" href="https://unpkg.com" />
-
-<!-- Open Graph -->
-<meta property="og:type" content="website" />
-<meta property="og:site_name" content="AEVERIS" />
-<meta property="og:title" content="AEVERIS — Intelligence that endures" />
-<meta property="og:description" content="Dual-use unmanned undersea systems for the world's most critical environments — built in Romania, starting in the Black Sea." />
-<meta property="og:url" content="https://www.aeveris.ro/" />
-<meta property="og:image" content="https://www.aeveris.ro/og-image.png" />
-<meta property="og:image:width" content="1200" />
-<meta property="og:image:height" content="669" />
-<meta property="og:image:alt" content="AEVERIS — unmanned undersea systems for critical waters" />
-
-<!-- Twitter/X -->
-<meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:title" content="AEVERIS — Intelligence that endures" />
-<meta name="twitter:description" content="Dual-use unmanned undersea systems for the world's most critical environments." />
-<meta name="twitter:image" content="https://www.aeveris.ro/og-image.png" />
-
-<!-- Icons -->
-<link rel="icon" type="image/png" href="/favicon-96x96.png?v=2" sizes="96x96" />
-<link rel="icon" type="image/svg+xml" href="/favicon.svg?v=2" />
-<link rel="shortcut icon" href="/favicon.ico?v=2" />
-<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
-<meta name="apple-mobile-web-app-title" content="AEVERIS" />
-<link rel="manifest" href="/site.webmanifest" />
-
-<!-- Structured data -->
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Organization",
-  "name": "AEVERIS",
-  "legalName": "AEVERIS S.R.L.",
-  "url": "https://www.aeveris.ro/",
-  "email": "contact@aeveris.ro",
-  "description": "AEVERIS designs dual-use unmanned undersea systems for the world's most critical environments — built in Romania, starting in the Black Sea.",
-  "address": {
-    "@type": "PostalAddress",
-    "streetAddress": "Str. Remus Opreanu 8",
-    "postalCode": "900734",
-    "addressLocality": "Constanța",
-    "addressCountry": "RO"
-  },
-  "brand": [
-    { "@type": "Brand", "name": "NERAEON" },
-    { "@type": "Brand", "name": "ONDAIQ" }
-  ]
-}
-</script>
+<title>AEVERIS — In Construction</title>
+<meta name="description" content="AEVERIS is temporarily offline for maintenance. We'll be back shortly." />
+<meta name="robots" content="noindex" />
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Michroma&family=Exo+2:wght@400;500;600&family=Montserrat:wght@400;500&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 
 <style>
-/* ============================================================
-   1. BRAND TOKENS — AEVERIS Brand Identity v1.0
-   ============================================================ */
 :root{
   --navy-950:#060E22;  --abyss-900:#0A1633; --navy-800:#0E1B40;
-  --deep-700:#12224C;  --navy-600:#1B2E5A;  --steel-500:#2A3C63;
-  --navy-400:#3B4E78;
-  --slate-600:#566179; --slate-500:#6E7C93; --slate-400:#8B97AB;
-  --silver-300:#AEB8C6;--silver-200:#C9D0DA;--silver-100:#E7EBF1;
-  --white:#F7F9FC;
+  --deep-700:#12224C;  --steel-500:#2A3C63;
+  --slate-500:#6E7C93; --slate-400:#8B97AB;
+  --silver-300:#AEB8C6; --silver-200:#C9D0DA; --silver-100:#E7EBF1;
   --electric:#2E76FF;
-  --ondaiq:#16C7C0;
-  --ember:#D9722E;
 
   --f-wordmark:'Michroma',sans-serif;
   --f-display:'Exo 2',sans-serif;
   --f-body:'Montserrat',sans-serif;
   --f-mono:'JetBrains Mono',ui-monospace,monospace;
-  --f-tagline:'Exo 2',sans-serif;
 
   --track-wordmark:0.24em;
-  --track-label:0.34em;
-  --gutter:clamp(20px,5vw,72px);
-  --rule:1px solid rgba(42,60,99,.65);
 }
 
 *,*::before,*::after{box-sizing:border-box}
-html{scroll-behavior:smooth;background:var(--abyss-900)}
+html,body{height:100%}
 body{
-  margin:0; background:var(--abyss-900); color:var(--silver-200);
-  font-family:var(--f-body); font-size:16px; line-height:1.7;
-  -webkit-font-smoothing:antialiased; overflow-x:hidden;
-}
-a{color:inherit;text-decoration:none}
-:focus-visible{outline:2px solid var(--electric);outline-offset:3px;border-radius:2px}
-
-.eyebrow{
-  font-family:var(--f-mono); font-size:11px; font-weight:500;
-  letter-spacing:var(--track-label); text-transform:uppercase;
-  color:var(--slate-400);
-}
-.eyebrow--spark{color:var(--electric)}
-.display{
-  font-family:var(--f-display); font-weight:600; line-height:1.05;
-  color:var(--silver-100); letter-spacing:.005em; margin:0;
-}
-
-/* ============================================================
-   3. MASTHEAD
-   ============================================================ */
-.masthead{
-  position:fixed; inset:0 0 auto 0; z-index:40;
-  display:flex; align-items:center; justify-content:space-between;
-  padding:18px var(--gutter);
-  background:linear-gradient(to bottom,rgba(10,22,51,.92),rgba(10,22,51,0));
-  backdrop-filter:blur(6px);
-}
-.masthead__mark{display:flex;align-items:center;gap:14px}
-.masthead__mark svg{width:22px;height:auto;display:block}
-.masthead__word{
-  font-family:var(--f-wordmark); font-size:13px;
-  letter-spacing:var(--track-wordmark); color:var(--silver-100);
-}
-.masthead__right{display:flex;align-items:center;gap:28px}
-.masthead__nav{display:flex;gap:30px}
-.masthead__nav a{
-  font-family:var(--f-mono); font-size:11px; letter-spacing:.18em;
-  text-transform:uppercase; color:var(--slate-400); transition:color .25s;
-}
-.masthead__nav a:hover{color:var(--silver-100)}
-.masthead__nav a.masthead__nav--outline{
-  color:var(--electric); border:1px solid var(--electric);
-  border-radius:2px; padding:5px 10px; margin:-5px 0;
-  transition:color .25s,background .25s,border-color .25s;
-}
-.masthead__nav a.masthead__nav--outline:hover{
-  color:var(--white); background:rgba(46,118,255,.12); border-color:var(--white);
-}
-
-.masthead__toggle{
-  display:none; color:var(--silver-100); background:none; border:none;
-  padding:8px; margin:-8px; cursor:pointer; transition:color .25s;
-}
-.masthead__toggle:hover{color:var(--white)}
-.masthead__toggle svg{width:22px;height:22px;display:block}
-.masthead__toggle .toggle-bar{transform-origin:center;transition:transform .25s ease,opacity .2s ease}
-.masthead__toggle.is-open .toggle-bar--top{transform:translateY(5px) rotate(45deg)}
-.masthead__toggle.is-open .toggle-bar--mid{opacity:0}
-.masthead__toggle.is-open .toggle-bar--bot{transform:translateY(-5px) rotate(-45deg)}
-
-@media(max-width:640px){
-  .masthead__toggle{display:block}
-  .masthead__nav{
-    flex-direction:column; align-items:stretch; gap:0;
-    position:fixed; inset:64px 0 auto 0; z-index:39;
-    background:rgba(10,22,51,.98); backdrop-filter:blur(10px);
-    border-bottom:var(--rule);
-    padding:6px var(--gutter) 26px;
-    transform:translateY(-8px); opacity:0; visibility:hidden;
-    transition:opacity .25s ease,transform .25s ease,visibility 0s linear .25s;
-  }
-  .masthead__nav a{
-    padding:15px 0; border-bottom:1px solid rgba(42,60,99,.4); font-size:12px;
-  }
-  .masthead__nav a.masthead__nav--outline{
-    display:inline-block; width:auto; margin:14px 0 0; padding:9px 14px; border-bottom:1px solid var(--electric);
-  }
-  body.nav-open .masthead__nav{
-    opacity:1; transform:translateY(0); visibility:visible; transition-delay:0s;
-  }
-}
-
-/* ============================================================
-   4. HERO
-     a) looping video   b) veil + contours
-     c) WebGL 3D mark   d) type
-   ============================================================ */
-.hero{
-  position:relative; height:100svh; min-height:560px; overflow:hidden;
-  display:flex; flex-direction:column; justify-content:center;
-  padding:84px var(--gutter) 54px;
+  margin:0; overflow:hidden;
   background:
     radial-gradient(120% 80% at 50% 8%, var(--deep-700) 0%, var(--abyss-900) 46%, var(--navy-950) 100%);
+  color:var(--silver-200);
+  font-family:var(--f-body);
+  -webkit-font-smoothing:antialiased;
 }
 
-.hero__video{
-  position:absolute; inset:0; z-index:0;
-  width:100%; height:100%; object-fit:cover; object-position:center;
-  pointer-events:none;
+.stage{
+  position:relative;
+  height:100svh; min-height:480px;
+  display:flex; flex-direction:column; align-items:center; justify-content:center;
+  padding:32px;
+  text-align:center;
 }
 
-.hero__veil{
-  position:absolute; inset:0; z-index:1; pointer-events:none;
-  background:
-    radial-gradient(125% 95% at 50% 44%, rgba(6,14,34,0) 0%, rgba(6,14,34,.4) 58%, rgba(6,14,34,.9) 100%),
-    linear-gradient(to bottom, rgba(10,22,51,.8) 0%, rgba(10,22,51,.12) 24%, rgba(10,22,51,.2) 66%, rgba(6,14,34,.95) 100%);
+/* ambient drifting light — slow, barely-there */
+.glow{
+  position:absolute; inset:-10%; z-index:0; pointer-events:none;
+  background:radial-gradient(38% 30% at 50% 38%, rgba(46,118,255,.10), transparent 70%);
+  animation:drift 12s ease-in-out infinite;
+}
+@keyframes drift{
+  0%,100%{ transform:translate(0,0) scale(1); }
+  50%{ transform:translate(0,-2%) scale(1.06); }
 }
 
-.hero__contours{
-  position:absolute; left:0; right:0; bottom:-4%; z-index:1;
-  height:60%; width:100%; pointer-events:none;
-  opacity:.3;
-  mask-image:linear-gradient(to top,#000 12%,transparent 88%);
-}
-.hero__contours svg{width:100%;height:100%;display:block}
-.hero__contours path{fill:none;stroke:var(--steel-500);stroke-width:1;vector-effect:non-scaling-stroke}
-
-/* (c) 3D mark stage */
-.hero__stage{
-  position:relative; z-index:2;
-  width:100%; height:clamp(140px,26svh,240px); margin:0 auto 2px;
-}
-#aeveris-3d{position:absolute;inset:0}
-#aeveris-3d canvas{display:block;width:100%;height:100%;cursor:grab}
-#aeveris-3d canvas:active{cursor:grabbing}
-
-/* static fallback if WebGL is unavailable */
-.hero__fallback{position:absolute; inset:0; display:none; align-items:center; justify-content:center}
-.hero__fallback svg{height:72%;width:auto}
-.no-webgl #aeveris-3d{display:none}
-.no-webgl .hero__fallback{display:flex}
-
-/* (d) type */
-.hero__type{position:relative;z-index:3;text-align:center;max-width:760px;margin:0 auto}
-.hero__wordmark{
-  font-family:var(--f-wordmark);
-  font-size:clamp(24px,5.4vw,50px);
-  letter-spacing:var(--track-wordmark);
-  color:var(--silver-100);
-  margin:10px 0 4px;
-  text-indent:var(--track-wordmark);
-  font-weight:400;
-  text-shadow:0 2px 40px rgba(6,14,34,.6);
-}
-.hero__tagline{
-  font-family:var(--f-tagline); font-weight:400;
-  font-size:clamp(14px,1.8vw,18px); line-height:1.3;
-  text-transform:uppercase; text-align:center;
-  color:var(--silver-200); margin:0 0 18px; letter-spacing:.1em;
-  min-height:1.3em;
-}
-.hero__tagline::after{
-  content:''; display:inline-block; width:2px; height:.95em;
-  margin-left:3px; vertical-align:-0.12em;
-  background:var(--silver-200);
-  animation:caret 1s step-end infinite;
-}
-.hero__sub{
-  font-family:var(--f-display); font-weight:600;
-  font-size:clamp(18px,2.6vw,27px); color:var(--silver-100); max-width:42ch;
-  margin:0 auto 24px; line-height:1.3; letter-spacing:.005em;
-}
-
-.divider{display:flex;align-items:center;justify-content:center;gap:14px;margin:0 auto}
-.divider::before,.divider::after{
-  content:''; height:1px; width:clamp(48px,9vw,96px);
-  background:linear-gradient(to right,transparent,var(--steel-500));
-}
-.divider::after{background:linear-gradient(to left,transparent,var(--steel-500))}
-.divider__spark{
-  width:6px;height:6px;border-radius:50%;background:var(--electric);
-  box-shadow:0 0 12px rgba(46,118,255,.9);
-}
-
-.scrollcue{
-  position:absolute; left:50%; bottom:26px; transform:translateX(-50%);
-  z-index:3; font-family:var(--f-mono); font-size:10px;
-  letter-spacing:.3em; color:var(--slate-500); text-transform:uppercase;
-}
-.scrollcue::after{
-  content:''; display:block; width:1px; height:26px; margin:10px auto 0;
-  background:linear-gradient(to bottom,var(--slate-500),transparent);
-  animation:cue 2.4s ease-in-out infinite;
-}
-@keyframes cue{0%,100%{opacity:.3;transform:scaleY(.6)}50%{opacity:1;transform:scaleY(1)}}
-@keyframes caret{50%{opacity:0}}
-
-/* keep the whole hero on one screen for short viewports */
-@media(max-height:680px){
-  .hero{padding-top:68px;padding-bottom:34px;min-height:0}
-  .hero__stage{height:clamp(110px,20svh,170px)}
-  .hero__wordmark{margin:4px 0 10px}
-  .hero__tagline{margin-bottom:10px}
-  .hero__sub{margin-bottom:14px}
-  .scrollcue{display:none}
-}
-
-/* ============================================================
-   5. SECTIONS
-   ============================================================ */
-.band{padding:clamp(72px,11vw,140px) var(--gutter);border-top:var(--rule);position:relative}
-.band--deep{background:var(--navy-950)}
-
-/* parallax backdrop — Architecture section */
-#brands{overflow:hidden}
-.brands__parallax{
-  position:absolute; inset:-18% 0; z-index:-1; pointer-events:none; will-change:transform;
-  background:
-    radial-gradient(58% 46% at 20% 26%,rgba(46,118,255,.14),transparent 70%),
-    radial-gradient(52% 44% at 84% 76%,rgba(22,199,192,.13),transparent 70%);
-}
-.band__inner{max-width:1120px;margin:0 auto}
-.band__head{max-width:640px;margin:0 0 54px}
-.band__head .eyebrow{display:block;margin-bottom:18px}
-.band__head .display{font-size:clamp(28px,4.2vw,44px);margin-bottom:20px}
-.band__head p{margin:0;color:var(--slate-400);font-size:15px;max-width:56ch}
-
-.brands{display:grid;gap:22px;grid-template-columns:repeat(auto-fit,minmax(300px,1fr))}
-.brandcard{
-  border:var(--rule); border-radius:14px; padding:38px 34px 42px;
-  background:linear-gradient(160deg,rgba(18,34,76,.5),rgba(10,22,51,0));
-  position:relative; overflow:hidden; transition:transform .3s ease,border-color .3s ease;
-}
-.brandcard:hover{transform:translateY(-4px);border-color:rgba(46,118,255,.4)}
-.brandcard--ondaiq:hover{border-color:rgba(22,199,192,.4)}
-.brandcard__bar{width:44px;height:2px;margin-bottom:26px;background:var(--electric)}
-.brandcard--ondaiq .brandcard__bar{background:var(--ondaiq)}
-.brandcard__name{
-  font-family:var(--f-wordmark); font-size:clamp(19px,2.4vw,26px);
-  letter-spacing:.16em; color:var(--electric); margin:0 0 14px; font-weight:400;
-}
-.brandcard--ondaiq .brandcard__name{color:var(--ondaiq)}
-.brandcard__spark{
-  display:inline-block; width:7px;height:7px;border-radius:50%;
-  background:var(--electric); vertical-align:middle; margin:0 3px 3px;
-  box-shadow:0 0 12px rgba(46,118,255,.9);
-  animation:pulse-dot 1.8s ease-in-out infinite;
-}
-.brandcard--ondaiq .brandcard__spark{
-  background:var(--ondaiq); box-shadow:0 0 12px rgba(22,199,192,.9);
-  margin:0 6px 3px 3px;
-}
-.brandcard__motto{
-  font-family:var(--f-display); font-style:italic; font-weight:500;
-  font-size:13px; letter-spacing:.06em; color:var(--slate-400);
-  margin:0 0 18px;
-}
-.brandcard__role{
-  font-family:var(--f-mono); font-size:10.5px; letter-spacing:.26em;
-  text-transform:uppercase; color:var(--slate-500); margin:0 0 22px;
-}
-.brandcard p{margin:0;font-size:14.5px;color:var(--silver-200);max-width:46ch}
-.brandcard p.brandcard__role--tag{margin:49px 0 0;max-width:none}
-
-.attrs{display:flex;flex-wrap:wrap;align-items:center;gap:16px;margin-top:12px}
-.attrs span:not(.attrs__dot){
-  font-family:var(--f-display); font-weight:600; font-size:clamp(15px,1.8vw,19px);
-  letter-spacing:.12em; text-transform:uppercase; color:var(--silver-100);
-  transition:color .25s;
-}
-.attrs span:not(.attrs__dot):hover{color:var(--white)}
-.attrs__dot{
-  width:6px;height:6px;border-radius:50%;background:var(--electric);
-  box-shadow:0 0 12px rgba(46,118,255,.9);
-  animation:pulse-dot 1.8s ease-in-out infinite;
-}
-@keyframes pulse-dot{
-  0%,100%{opacity:.5;transform:scale(.85);box-shadow:0 0 6px rgba(46,118,255,.6)}
-  50%{opacity:1;transform:scale(1.15);box-shadow:0 0 16px rgba(46,118,255,1)}
-}
-
-/* advantage grid — HUD panel styling */
-.advgrid{
-  display:grid; gap:1px; grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
-  background:rgba(42,60,99,.65); border:var(--rule); border-radius:14px; overflow:hidden;
-}
-.advcard{
-  position:relative; padding:36px 30px 32px; background:var(--abyss-900);
-  overflow:hidden; transition:background .35s ease;
-}
-.advcard::before{
-  content:''; position:absolute; inset:0; opacity:0; pointer-events:none;
-  background:radial-gradient(220px 160px at 18% -10%,rgba(46,118,255,.16),transparent 70%);
-  transition:opacity .4s ease;
-}
-.advcard:hover{background:var(--navy-800)}
-.advcard:hover::before{opacity:1}
-.advcard__num{
-  display:block; font-family:var(--f-mono); font-weight:500; font-size:12px;
-  letter-spacing:.32em; color:var(--electric); margin-bottom:20px;
-  text-shadow:0 0 14px rgba(46,118,255,.55);
-}
-.advcard__bar{width:0;height:2px;background:var(--electric);margin-bottom:18px;transition:width .4s ease}
-.advcard:hover .advcard__bar{width:44px}
-.advcard h3{
-  font-family:var(--f-display); font-weight:600; font-size:19px; line-height:1.25;
-  color:var(--silver-100); margin:0 0 10px; letter-spacing:.005em;
-}
-.advcard p{margin:0;font-size:14px;color:var(--slate-400);line-height:1.65;max-width:40ch}
-
-.eyebrow--teal{color:var(--ondaiq)}
-.eyebrow--ember{color:var(--ember)}
-
-/* Brand marks — wordmark typeface + brand color, wherever they appear inline */
-.mark-ondaiq{
-  font-family:var(--f-wordmark); font-weight:400;
-  letter-spacing:.06em; color:var(--ondaiq);
-}
-.mark-neraeon{
-  font-family:var(--f-wordmark); font-weight:400;
-  letter-spacing:.06em; color:var(--electric);
-}
-
-/* available-now banner — burnt-orange accent, differentiated from the bands above */
-.band--ember{
-  background:
-    radial-gradient(120% 70% at 50% 0%,rgba(217,114,46,.09) 0%,transparent 62%),
-    var(--navy-950);
-  border-top:1px solid rgba(217,114,46,.3);
-}
-.band--ember .band__head{max-width:720px}
-
-/* deploying ember banner — grows left-to-right on scroll, then types its label */
-.ember-banner{
-  position:relative; display:inline-block;
-  height:0.5cm; line-height:0.5cm; padding:0 16px;
-  margin-bottom:18px; border-radius:2px; overflow:hidden;
-}
-.ember-banner__fill{
-  position:absolute; inset:0; background:var(--ember);
-  transform:scaleX(0); transform-origin:left;
-  transition:transform .7s cubic-bezier(.4,0,.2,1);
-}
-.ember-banner.is-in .ember-banner__fill{transform:scaleX(1)}
-.ember-banner__label{
+/* ---- mark + sonar ping ---- */
+.mark{
   position:relative; z-index:1;
-  font-family:var(--f-mono); font-size:11px; font-weight:600;
-  letter-spacing:var(--track-label); text-transform:uppercase;
-  color:var(--navy-950); white-space:nowrap;
+  width:84px; height:84px; margin:0 auto 22px;
+  display:flex; align-items:center; justify-content:center;
+  animation:bob 5s ease-in-out infinite;
 }
-.ember-banner__label::after{
+@keyframes bob{
+  0%,100%{ transform:translateY(0); }
+  50%{ transform:translateY(-6px); }
+}
+.mark svg{ width:100%; height:100%; display:block; position:relative; z-index:2; }
+
+.ping{
+  position:absolute; left:50%; bottom:11px; z-index:1;
+  width:7px; height:7px; margin-left:-3.5px; margin-bottom:-3.5px;
+  border-radius:50%; border:1px solid var(--electric);
+  animation:ping 3s cubic-bezier(.2,.6,.4,1) infinite;
+  opacity:0;
+}
+.ping--b{ animation-delay:1s; }
+.ping--c{ animation-delay:2s; }
+@keyframes ping{
+  0%{ transform:scale(1); opacity:.9; }
+  100%{ transform:scale(11); opacity:0; }
+}
+
+.wordmark{
+  position:relative; z-index:1;
+  font-family:var(--f-wordmark); font-weight:400;
+  font-size:clamp(22px,4.4vw,34px);
+  letter-spacing:var(--track-wordmark);
+  text-indent:var(--track-wordmark);
+  color:var(--silver-100);
+  margin:0 0 20px;
+}
+
+.status{
+  position:relative; z-index:1;
+  font-family:var(--f-display); font-weight:600;
+  font-size:clamp(13px,2vw,16px); letter-spacing:.42em;
+  text-transform:uppercase; color:var(--electric);
+  margin:0 0 20px; min-height:1.3em;
+  white-space:nowrap;
+}
+.status::after{
   content:''; display:inline-block; width:2px; height:.9em;
-  margin-left:2px; vertical-align:-0.1em;
-  background:var(--navy-950);
+  margin-left:4px; vertical-align:-0.12em;
+  background:var(--electric);
   animation:caret 1s step-end infinite;
 }
+@keyframes caret{ 50%{ opacity:0; } }
 
-/* applications list — teal ONDAIQ variant */
-.applist{border-top:var(--rule)}
-.approw{
-  display:grid; grid-template-columns:14px minmax(190px,270px) 1fr;
-  align-items:baseline; gap:8px 30px;
-  padding:26px 8px; border-bottom:var(--rule);
-  transition:background .3s ease;
-}
-.approw:hover{background:rgba(22,199,192,.06)}
-.approw__marker{
-  grid-column:1; grid-row:1;
-  width:8px;height:8px;border-radius:2px;background:var(--ondaiq);
-  transform:rotate(45deg); align-self:center;
-  box-shadow:0 0 10px rgba(22,199,192,.75);
-}
-.approw h3{
-  grid-column:2; grid-row:1;
-  font-family:var(--f-mono); font-weight:500; font-size:12.5px;
-  letter-spacing:.16em; text-transform:uppercase; color:var(--ondaiq); margin:0;
-}
-.approw p{grid-column:3;grid-row:1;margin:0;font-size:14.5px;color:var(--slate-400);line-height:1.6;max-width:52ch}
-@media(max-width:720px){
-  .approw{grid-template-columns:14px 1fr; row-gap:6px}
-  .approw h3{grid-column:2; grid-row:1}
-  .approw p{grid-column:2; grid-row:2}
+.lede{
+  position:relative; z-index:1;
+  font-family:var(--f-body); font-weight:400;
+  font-size:clamp(14px,1.8vw,16px); line-height:1.65;
+  color:var(--slate-400); max-width:38ch; margin:0;
 }
 
-/* applications list — burnt-orange ONDA·IQ services variant, with per-service icons */
-.applist--ember .approw{grid-template-columns:24px minmax(190px,270px) 1fr}
-.applist--ember .approw:hover{background:rgba(217,114,46,.07)}
-.applist--ember .approw p{transition:color .3s ease}
-.applist--ember .approw:hover p{color:var(--white)}
-.applist--ember .approw h3{
-  color:var(--white); text-transform:none; font-weight:600; letter-spacing:.02em; font-size:14px;
-  display:flex; align-items:baseline; gap:7px;
+.contact{
+  position:absolute; left:0; right:0; bottom:28px; z-index:1;
+  font-family:var(--f-mono); font-size:11px; letter-spacing:.14em;
+  color:var(--steel-500); text-transform:uppercase;
 }
-.applist--ember .approw p{max-width:56ch}
-.approw__icon{
-  grid-column:1; grid-row:1; align-self:center;
-  width:22px; height:22px; color:var(--ember);
-  transition:transform .3s ease,filter .3s ease,color .3s ease;
-}
-.approw__icon svg{width:100%;height:100%;display:block}
-.applist--ember .approw:hover .approw__icon{
-  transform:scale(1.14); color:var(--white);
-  filter:drop-shadow(0 0 9px rgba(217,114,46,.9));
-}
-@media(max-width:720px){
-  .applist--ember .approw{grid-template-columns:24px 1fr}
-}
+.contact a{ color:var(--slate-500); text-decoration:none; transition:color .2s; }
+.contact a:hover{ color:var(--silver-200); }
 
-.contact{text-align:center}
-.contact .display{font-size:clamp(30px,5vw,52px);margin-bottom:28px}
-.btn{
-  display:inline-block; margin-top:8px;
-  font-family:var(--f-mono); font-size:17px; font-weight:700; letter-spacing:.03em;
-  text-transform:none; color:var(--white); background:transparent;
-  border:1px solid var(--electric);
-  padding:17px 40px; border-radius:2px;
-  transition:background .25s,border-color .25s,transform .25s,box-shadow .25s;
+@media (max-width:480px){
+  .status{ letter-spacing:.26em; white-space:normal; }
 }
-.btn:hover{
-  background:rgba(46,118,255,.1); border-color:var(--white);
-  transform:translateY(-1px); box-shadow:0 0 26px rgba(46,118,255,.35);
-}
-
-.colophon{
-  display:grid; grid-template-columns:1fr 1fr 1fr; gap:36px 24px;
-  align-items:start;
-  padding:48px var(--gutter); border-top:var(--rule);
-  font-family:var(--f-mono);
-}
-@media(max-width:640px){ .colophon{grid-template-columns:1fr} }
-.colophon a{transition:color .25s}
-.colophon a:hover{color:var(--white)}
-.colophon__brand{display:flex;flex-direction:column;gap:16px}
-.colophon__brand-top{display:flex;align-items:center;gap:14px}
-.colophon__brand-top svg{width:26px;height:auto;display:block;flex:none}
-.colophon__brand-top span{
-  font-family:var(--f-wordmark); font-size:17px;
-  letter-spacing:var(--track-wordmark); color:var(--silver-100);
-}
-.colophon__copyright{
-  font-size:11px; letter-spacing:.14em; text-transform:uppercase; color:var(--silver-300);
-}
-.colophon__hq{display:flex;flex-direction:column;gap:8px}
-.colophon__hq-label{
-  font-size:13px; letter-spacing:.22em; text-transform:uppercase; color:var(--silver-100);
-}
-.colophon__hq-line{
-  font-size:12.5px; letter-spacing:.01em; text-transform:none; color:var(--silver-300);
-}
-.colophon__privacy{display:flex}
-.colophon__privacy a{
-  font-size:11px; letter-spacing:.2em; text-transform:uppercase; color:var(--silver-100);
-}
-
-/* ============================================================
-   6. MOTION
-   ============================================================ */
-.reveal{opacity:0;transform:translateY(18px);transition:opacity .7s ease,transform .7s ease}
-.reveal.is-in{opacity:1;transform:none}
-
-/* staggered reveal — headline, then body, then children */
-.reveal--stagger{opacity:1;transform:none}
-.reveal--stagger>*{
-  opacity:0; transform:translateY(14px);
-  transition:opacity .6s ease,transform .6s ease;
-}
-.reveal--stagger.is-in>*{opacity:1;transform:none}
-.reveal--stagger>*:nth-child(1){transition-delay:0ms}
-.reveal--stagger>*:nth-child(2){transition-delay:90ms}
-.reveal--stagger>*:nth-child(3){transition-delay:170ms}
-.reveal--stagger>*:nth-child(4){transition-delay:250ms}
-.reveal--stagger>*:nth-child(5){transition-delay:330ms}
-
-/* cascade delay for card/row groups */
-.advgrid .advcard:nth-child(1),.applist .approw:nth-child(1),.brands .brandcard:nth-child(1){transition-delay:80ms}
-.advgrid .advcard:nth-child(2),.applist .approw:nth-child(2),.brands .brandcard:nth-child(2){transition-delay:150ms}
-.advgrid .advcard:nth-child(3),.applist .approw:nth-child(3){transition-delay:220ms}
-.advgrid .advcard:nth-child(4),.applist .approw:nth-child(4){transition-delay:290ms}
-.advgrid .advcard:nth-child(5),.applist .approw:nth-child(5){transition-delay:360ms}
-.advgrid .advcard:nth-child(6),.applist .approw:nth-child(6){transition-delay:430ms}
-
-/* traveling spark along each section's top hairline — continuous loop */
-.band__spark{
-  position:absolute; top:-1px; left:0; width:9px; height:2px; border-radius:2px;
-  background:var(--electric); box-shadow:0 0 10px rgba(46,118,255,.85);
-  opacity:0; pointer-events:none;
-  animation:spark-travel 3.2s cubic-bezier(.4,0,.2,1) infinite;
-}
-#applications .band__spark{background:var(--ondaiq);box-shadow:0 0 10px rgba(22,199,192,.85)}
-#available-now .band__spark{background:var(--ember);box-shadow:0 0 10px rgba(217,114,46,.85)}
-@keyframes spark-travel{
-  0%{left:0;opacity:0}
-  10%{opacity:1}
-  90%{opacity:1}
-  100%{left:calc(100% - 9px);opacity:0}
-}
-
-/* section divider — full-width lines deploying from opposite ends, run in a continuous loop */
-.section-divider{
-  position:relative; width:100%; height:10px;
-  background:var(--navy-950);
-}
-.section-divider--amber,.section-divider--single{height:2px}
-.section-divider__line{
-  position:absolute; left:0; height:2px; width:100%;
-  transform:scaleX(0);
-  animation:divider-deploy 4.5s cubic-bezier(.4,0,.2,1) infinite;
-}
-.section-divider__line--electric{
-  top:0; transform-origin:left;
-  background:linear-gradient(to right,transparent 0%,var(--electric) 12%,var(--electric) 88%,transparent 100%);
-  box-shadow:0 0 10px rgba(46,118,255,.7);
-}
-.section-divider__line--teal{
-  bottom:0; transform-origin:right;
-  background:linear-gradient(to left,transparent 0%,var(--ondaiq) 12%,var(--ondaiq) 88%,transparent 100%);
-  box-shadow:0 0 10px rgba(22,199,192,.7);
-}
-.section-divider__line--ember{
-  top:0; transform-origin:left;
-  background:linear-gradient(to right,transparent 0%,var(--ember) 12%,var(--ember) 88%,transparent 100%);
-  box-shadow:0 0 10px rgba(217,114,46,.7);
-}
-@keyframes divider-deploy{
-  0%{transform:scaleX(0)}
-  35%{transform:scaleX(1)}
-  80%{transform:scaleX(1)}
-  100%{transform:scaleX(0)}
-}
-
-@media(prefers-reduced-motion:reduce){
-  html{scroll-behavior:auto}
-  .reveal{opacity:1;transform:none;transition:none}
-  .reveal--stagger>*{opacity:1;transform:none;transition:none}
-  .scrollcue::after{animation:none}
-  .hero__tagline::after{animation:none;opacity:0}
-  .attrs__dot{animation:none}
-  .brandcard__spark{animation:none}
-  .band__spark{display:none}
-  .ember-banner__fill{transition:none;transform:scaleX(1)}
-  .ember-banner__label::after{animation:none;opacity:0}
-  .approw__icon{transition:none}
-  .section-divider__line{animation:none;transform:scaleX(1)}
-  .brands__parallax{transform:none!important}
+@media (prefers-reduced-motion:reduce){
+  .mark{ animation:none; }
+  .glow{ animation:none; }
+  .ping,.ping--b,.ping--c{ animation:none; display:none; }
+  .status::after{ animation:none; opacity:1; }
 }
 </style>
 </head>
 <body>
 
-<header class="masthead">
-  <div class="masthead__mark">
-    <svg viewBox="0 0 100 100" aria-hidden="true">
+<div class="stage">
+  <div class="glow" aria-hidden="true"></div>
+
+  <div class="mark" aria-hidden="true">
+    <span class="ping"></span>
+    <span class="ping ping--b"></span>
+    <span class="ping ping--c"></span>
+    <svg viewBox="0 0 100 100">
       <g fill="none" stroke-linecap="round" stroke-width="5.2">
         <polyline points="16,80 50,14 84,80" stroke="#E7EBF1"/>
         <polyline points="27,77.5 50,30 73,77.5" stroke="#AEB8C6"/>
@@ -643,579 +153,28 @@ a{color:inherit;text-decoration:none}
       </g>
       <circle cx="50" cy="79" r="3.4" fill="#2E76FF"/>
     </svg>
-    <span class="masthead__word">AEVERIS</span>
-  </div>
-  <div class="masthead__right">
-    <button class="masthead__toggle" id="navToggle" type="button" aria-expanded="false" aria-controls="primaryNav" aria-label="Open menu">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round">
-        <line class="toggle-bar toggle-bar--top" x1="3" y1="7" x2="21" y2="7"/>
-        <line class="toggle-bar toggle-bar--mid" x1="3" y1="12" x2="21" y2="12"/>
-        <line class="toggle-bar toggle-bar--bot" x1="3" y1="17" x2="21" y2="17"/>
-      </svg>
-    </button>
-    <nav class="masthead__nav" id="primaryNav" aria-label="Primary">
-      <a href="#platform">Platform</a>
-      <a href="#brands">Brands</a>
-      <a href="#applications">Services</a>
-      <a href="#contact" class="masthead__nav--outline">Contact</a>
-    </nav>
-  </div>
-</header>
-
-<main>
-  <!-- ===================== HERO ===================== -->
-  <section class="hero" id="hero">
-
-    <!-- (a) looping video -->
-    <video class="hero__video" autoplay muted loop playsinline preload="metadata" aria-hidden="true">
-      <source src="hero.mp4" type="video/mp4">
-    </video>
-
-    <!-- (b) veil + contours -->
-    <div class="hero__veil" aria-hidden="true"></div>
-    <div class="hero__contours" aria-hidden="true">
-      <svg viewBox="0 0 1440 620" preserveAspectRatio="none">
-        <path d="M0,92 C190,44 330,132 540,96 C770,56 918,148 1130,104 C1284,72 1368,118 1440,98" opacity=".30"/>
-        <path d="M0,158 C176,112 342,196 552,164 C782,128 930,214 1142,172 C1292,142 1372,184 1440,166" opacity=".34"/>
-        <path d="M0,228 C202,176 336,268 546,232 C776,192 946,282 1150,242 C1298,214 1376,252 1440,236" opacity=".38"/>
-        <path d="M0,300 C186,252 358,338 560,306 C790,270 938,352 1158,314 C1304,288 1382,322 1440,308" opacity=".42"/>
-        <path d="M0,374 C210,326 344,412 552,380 C784,344 954,424 1146,388 C1300,360 1378,394 1440,382" opacity=".46"/>
-        <path d="M0,450 C194,404 352,486 566,456 C796,422 942,498 1160,464 C1306,438 1384,470 1440,458" opacity=".5"/>
-        <path d="M0,528 C204,484 340,562 548,534 C780,502 950,574 1152,542 C1298,518 1380,546 1440,536" opacity=".54"/>
-      </svg>
-    </div>
-
-    <!-- (c) the 3D mark -->
-    <div class="hero__stage">
-      <div id="aeveris-3d"></div>
-      <div class="hero__fallback" aria-hidden="true">
-        <svg viewBox="0 0 100 100">
-          <g fill="none" stroke-linecap="round" stroke-width="5.2">
-            <polyline points="16,80 50,14 84,80" stroke="#E7EBF1"/>
-            <polyline points="27,77.5 50,30 73,77.5" stroke="#AEB8C6"/>
-            <polyline points="37.5,75 50,46 62.5,75" stroke="#6E7C93"/>
-          </g>
-          <circle cx="50" cy="79" r="3.4" fill="#2E76FF"/>
-        </svg>
-      </div>
-    </div>
-
-    <!-- (d) type -->
-    <div class="hero__type">
-      <h1 class="hero__wordmark">AEVERIS</h1>
-      <p class="hero__tagline" id="heroTagline">Intelligence that endures</p>
-      <p class="hero__sub">
-        We engineer end-to-end, dual-use unmanned systems for the world's
-        most critical environments.
-      </p>
-      <div class="divider"><span class="divider__spark"></span></div>
-    </div>
-
-    <div class="scrollcue">Scroll</div>
-  </section>
-
-  <!-- ===================== PLATFORM ===================== -->
-  <section class="band band--deep" id="platform">
-    <span class="band__spark" aria-hidden="true"></span>
-    <div class="band__inner">
-      <div class="band__head reveal reveal--stagger">
-        <span class="eyebrow eyebrow--spark">The essence</span>
-        <h2 class="display">Substance over hype.</h2>
-        <p>
-          AEVERIS develops the core intelligence architecture for unmanned
-          undersea operations - advancing toward full autonomy, in any
-          environment. Anchored in the Black Sea, not simulation. Built for
-          resilience when the stakes are highest.
-        </p>
-      </div>
-      <div class="attrs reveal">
-        <span>Self-Reliant</span>
-        <span class="attrs__dot" aria-hidden="true"></span>
-        <span>Advanced</span>
-        <span class="attrs__dot" aria-hidden="true"></span>
-        <span>Precise</span>
-        <span class="attrs__dot" aria-hidden="true"></span>
-        <span>Enduring</span>
-      </div>
-    </div>
-  </section>
-
-  <!-- ===================== ADVANTAGE ===================== -->
-  <section class="band" id="advantage">
-    <span class="band__spark" aria-hidden="true"></span>
-    <div class="band__inner">
-      <div class="band__head reveal reveal--stagger">
-        <span class="eyebrow eyebrow--spark">The advantage</span>
-        <h2 class="display">Building with an edge that holds where it matters most</h2>
-      </div>
-      <div class="advgrid">
-        <article class="advcard reveal">
-          <span class="advcard__num">01</span>
-          <div class="advcard__bar"></div>
-          <h3>Complete Control. From Concept to Capability</h3>
-          <p>Full control of design, software, hardware, and intellectual property, driving the development of a fully localized production and sustainment capability.</p>
-        </article>
-        <article class="advcard reveal">
-          <span class="advcard__num">02</span>
-          <div class="advcard__bar"></div>
-          <h3>Optimized Total Cost of Ownership</h3>
-          <p>A modular architecture paired with adaptable payloads minimizes per-vehicle capital expenditure while maximizing mission recovery rates.</p>
-        </article>
-        <article class="advcard reveal">
-          <span class="advcard__num">03</span>
-          <div class="advcard__bar"></div>
-          <h3>Modular Field Repairability</h3>
-          <p>Designed for rapid, plug-and-play module replacement—eliminating downtime and preserving the primary asset.</p>
-        </article>
-        <article class="advcard reveal">
-          <span class="advcard__num">04</span>
-          <div class="advcard__bar"></div>
-          <h3>Operational Heritage</h3>
-          <p>An architecture grounded in real-world mine countermeasures (MCM) and hostile undersea operations.</p>
-        </article>
-        <article class="advcard reveal">
-          <span class="advcard__num">05</span>
-          <div class="advcard__bar"></div>
-          <h3>Scalable Dual-Use Evolution</h3>
-          <p>Purpose-built for both strategic naval defense and commercial subsea inspection, backed by a clear ROV → AUV roadmap.</p>
-        </article>
-        <article class="advcard reveal">
-          <span class="advcard__num">06</span>
-          <div class="advcard__bar"></div>
-          <h3>Rapid &amp; Flexible Deployment</h3>
-          <p>Compact form engineered for seamless launch and recovery from small vessels and USVs.</p>
-        </article>
-      </div>
-    </div>
-  </section>
-
-  <!-- ===================== SUB-BRANDS ===================== -->
-  <section class="band band--deep" id="brands">
-    <span class="band__spark" aria-hidden="true"></span>
-    <div class="brands__parallax" aria-hidden="true"></div>
-    <div class="band__inner">
-      <div class="band__head reveal reveal--stagger">
-        <span class="eyebrow eyebrow--spark">Architecture</span>
-        <h2 class="display">One Core Platform. Dual-Domain Mastery.</h2>
-        <p>
-          Two missions, two identities. Proven in defense and applied in the
-          civil domain.
-        </p>
-      </div>
-      <div class="brands">
-        <article class="brandcard reveal">
-          <div class="brandcard__bar"></div>
-          <h3 class="brandcard__name">NER<span class="brandcard__spark" aria-hidden="true"></span>AEON</h3>
-          <p class="brandcard__motto">Vigil et Ultor</p>
-          <p>
-            <span class="mark-neraeon">NERAEON</span> is a self-reliant family of intelligent unmanned undersea systems
-            for mine countermeasures. Starting in the Black Sea. No crew, no
-            divers, no ships in the danger zone.
-          </p>
-          <p class="brandcard__role brandcard__role--tag">Identify · Eliminate · Protect</p>
-        </article>
-        <article class="brandcard brandcard--ondaiq reveal">
-          <div class="brandcard__bar"></div>
-          <h3 class="brandcard__name">ONDA<span class="brandcard__spark" aria-hidden="true"></span>IQ</h3>
-          <p class="brandcard__motto">The depths, understood.</p>
-          <p>
-            <span class="mark-ondaiq">ONDAIQ</span> is an uncrewed undersea intelligence system that surveys,
-            identifies and assesses subsea environments. Turning the depths
-            into clear, reliable data, safely and at scale.
-          </p>
-          <p class="brandcard__role brandcard__role--tag">Survey · Assess · Deliver</p>
-        </article>
-      </div>
-    </div>
-  </section>
-
-  <!-- ===================== APPLICATIONS (ONDAIQ) ===================== -->
-  <section class="band" id="applications">
-    <span class="band__spark" aria-hidden="true"></span>
-    <div class="band__inner">
-      <div class="band__head reveal reveal--stagger">
-        <span class="eyebrow eyebrow--teal">Applications</span>
-        <h2 class="display">Services and Mission Critical Applications</h2>
-        <p>
-          One agile modular platform for full-depth intelligence.
-        </p>
-      </div>
-      <div class="applist">
-        <article class="approw reveal">
-          <span class="approw__marker" aria-hidden="true"></span>
-          <h3>Critical Infrastructure Protection</h3>
-          <p>Subsea cable and pipeline monitoring, threat detection, and asset integrity.</p>
-        </article>
-        <article class="approw reveal">
-          <span class="approw__marker" aria-hidden="true"></span>
-          <h3>Offshore Energy &amp; Resources</h3>
-          <p>High-precision inspection data for Black Sea offshore gas fields and subsea structures.</p>
-        </article>
-        <article class="approw reveal">
-          <span class="approw__marker" aria-hidden="true"></span>
-          <h3>Ports &amp; Harbour Security</h3>
-          <p>Rapid hull inspections, quay wall auditing, and seabed anomaly scanning.</p>
-        </article>
-        <article class="approw reveal">
-          <span class="approw__marker" aria-hidden="true"></span>
-          <h3>Aquaculture Operations</h3>
-          <p>Autonomous net inspection, mooring integrity, and environmental monitoring.</p>
-        </article>
-        <article class="approw reveal">
-          <span class="approw__marker" aria-hidden="true"></span>
-          <h3>Hydrographic &amp; Marine Science</h3>
-          <p>High-resolution seabed mapping, bathymetry, and oceanographic research.</p>
-        </article>
-        <article class="approw reveal">
-          <span class="approw__marker" aria-hidden="true"></span>
-          <h3>Maritime Law Enforcement</h3>
-          <p>Underwater forensics, anti-smuggling support, and search-and-recovery operations.</p>
-        </article>
-      </div>
-    </div>
-  </section>
-
-  <div class="section-divider section-divider--amber" aria-hidden="true">
-    <span class="section-divider__line section-divider__line--ember"></span>
   </div>
 
-  <!-- ===================== AVAILABLE NOW (ONDA·IQ SERVICES) ===================== -->
-  <section class="band band--ember" id="available-now">
-    <span class="band__spark" aria-hidden="true"></span>
-    <div class="band__inner">
-      <div class="band__head reveal reveal--stagger">
-        <div class="ember-banner" id="emberBanner">
-          <span class="ember-banner__fill" aria-hidden="true"></span>
-          <span class="ember-banner__label" id="servicesEyebrow">Available now</span>
-        </div>
-        <h2 class="display">The platform is in development. The service is available.</h2>
-        <p>
-          <span class="mark-ondaiq">ONDA·IQ</span>'s ROV team is dispatchable today for fast, precise underwater inspection.
-        </p>
-      </div>
-      <div class="applist applist--ember">
-        <article class="approw reveal">
-          <span class="approw__icon" aria-hidden="true">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
-              <circle cx="12" cy="5" r="2"/>
-              <line x1="12" y1="7" x2="12" y2="19"/>
-              <line x1="7.5" y1="10" x2="16.5" y2="10"/>
-              <path d="M5 14a7 7 0 0 0 14 0"/>
-            </svg>
-          </span>
-          <h3><span class="mark-ondaiq">ONDA·IQ</span> ShipCheck</h3>
-          <p>Hull, propeller, rudder and sea-chest inspection, with full video and photo report.</p>
-        </article>
-        <article class="approw reveal">
-          <span class="approw__icon" aria-hidden="true">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
-              <circle cx="8" cy="7" r="2.2"/>
-              <circle cx="16" cy="7" r="2.2"/>
-              <line x1="8" y1="9.2" x2="8" y2="19"/>
-              <line x1="16" y1="9.2" x2="16" y2="19"/>
-              <line x1="4" y1="19" x2="20" y2="19"/>
-            </svg>
-          </span>
-          <h3><span class="mark-ondaiq">ONDA·IQ</span> PortCheck</h3>
-          <p>Quay, piling and basin inspection, locating and assessing submerged structures and objects.</p>
-        </article>
-        <article class="approw reveal">
-          <span class="approw__icon" aria-hidden="true">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M12 4 20.5 19.5H3.5Z"/>
-              <line x1="12" y1="10.5" x2="12" y2="15"/>
-              <circle cx="12" cy="17.3" r="0.9" fill="currentColor" stroke="none"/>
-            </svg>
-          </span>
-          <h3><span class="mark-ondaiq">ONDA·IQ</span> EmergencyAlert</h3>
-          <p>Rapid-response dispatch for underwater incidents: fouled propellers, suspected damage, lost objects.</p>
-        </article>
-      </div>
-    </div>
-  </section>
+  <h1 class="wordmark">AEVERIS</h1>
+  <p class="status" id="status"></p>
+  <p class="lede">We're deploying something beneath the surface. Back online shortly.</p>
 
-  <div class="section-divider section-divider--single" aria-hidden="true">
-    <span class="section-divider__line section-divider__line--electric"></span>
-  </div>
-
-  <!-- ===================== CONTACT ===================== -->
-  <section class="band band--deep contact" id="contact">
-    <span class="band__spark" aria-hidden="true"></span>
-    <div class="band__inner reveal reveal--stagger">
-      <span class="eyebrow eyebrow--spark">Contact</span>
-      <h2 class="display" style="margin-top:18px">Start a conversation.</h2>
-      <p style="color:var(--slate-400);max-width:46ch;margin:0 auto 10px">
-        Program enquiries, partnerships and technical briefings.
-      </p>
-      <a class="btn" href="mailto:contact@aeveris.ro">contact@aeveris.ro</a>
-    </div>
-  </section>
-
-  <div class="section-divider section-divider--single" aria-hidden="true">
-    <span class="section-divider__line section-divider__line--teal"></span>
-  </div>
-</main>
-
-<footer class="colophon">
-  <div class="colophon__brand">
-    <div class="colophon__brand-top">
-      <svg viewBox="0 0 100 100" aria-hidden="true">
-        <g fill="none" stroke-linecap="round" stroke-width="5.2">
-          <polyline points="16,80 50,14 84,80" stroke="#E7EBF1"/>
-          <polyline points="27,77.5 50,30 73,77.5" stroke="#AEB8C6"/>
-          <polyline points="37.5,75 50,46 62.5,75" stroke="#6E7C93"/>
-        </g>
-        <circle cx="50" cy="79" r="3.4" fill="#2E76FF"/>
-      </svg>
-      <span>AEVERIS</span>
-    </div>
-    <span class="colophon__copyright">Copyright © 2026 AEVERIS s.r.l.</span>
-  </div>
-  <div class="colophon__hq">
-    <span class="colophon__hq-label">Headquarters</span>
-    <span class="colophon__hq-line">Str. Remus Opreanu 8</span>
-    <span class="colophon__hq-line">900734 Constanța, Romania</span>
-  </div>
-  <div class="colophon__privacy">
-    <a href="privacy.html">Privacy</a>
-  </div>
-</footer>
+  <div class="contact">contact&#64;aeveris.ro</div>
+</div>
 
 <script>
 (function(){
-  const prefersReducedMotion = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-
-  function typeWriter(el, text, speed){
-    if(el.__typeTimer) clearTimeout(el.__typeTimer);
-    if(prefersReducedMotion){ el.textContent = text; return; }
-    speed = speed || 42;
-    el.textContent = '';
-    let i = 0;
-    (function step(){
-      el.textContent = text.slice(0, i);
-      if(i < text.length){
-        i++;
-        el.__typeTimer = setTimeout(step, speed);
-      }
-    })();
-  }
-
-  const heroTagline = document.getElementById('heroTagline');
-  if(heroTagline) typeWriter(heroTagline, heroTagline.textContent.trim());
-
-  const navToggle = document.getElementById('navToggle');
-  const primaryNav = document.getElementById('primaryNav');
-  if(navToggle && primaryNav){
-    function closeNav(){
-      document.body.classList.remove('nav-open');
-      navToggle.classList.remove('is-open');
-      navToggle.setAttribute('aria-expanded','false');
-      navToggle.setAttribute('aria-label','Open menu');
-    }
-    function openNav(){
-      document.body.classList.add('nav-open');
-      navToggle.classList.add('is-open');
-      navToggle.setAttribute('aria-expanded','true');
-      navToggle.setAttribute('aria-label','Close menu');
-    }
-    navToggle.addEventListener('click', () => {
-      document.body.classList.contains('nav-open') ? closeNav() : openNav();
-    });
-    primaryNav.querySelectorAll('a').forEach(a => a.addEventListener('click', closeNav));
-    document.addEventListener('keydown', e => { if(e.key === 'Escape') closeNav(); });
-    window.matchMedia('(min-width: 641px)').addEventListener('change', e => { if(e.matches) closeNav(); });
-  }
-
-  const emberBanner = document.getElementById('emberBanner');
-  if(emberBanner){
-    const label = document.getElementById('servicesEyebrow');
-    const labelText = label ? label.textContent.trim() : '';
-    const emberIO = new IntersectionObserver(entries => {
-      entries.forEach(en => {
-        if(!en.isIntersecting) return;
-        en.target.classList.add('is-in');
-        const delay = prefersReducedMotion ? 0 : 750;
-        setTimeout(() => {
-          if(label) typeWriter(label, labelText);
-        }, delay);
-        emberIO.unobserve(en.target);
-      });
-    }, {threshold:.4});
-    emberIO.observe(emberBanner);
-  }
+  var el = document.getElementById('status');
+  var text = 'In construction';
+  var reduced = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if(reduced){ el.textContent = text; return; }
+  var i = 0;
+  (function step(){
+    el.textContent = text.slice(0, i).toUpperCase();
+    if(i < text.length){ i++; setTimeout(step, 70); }
+  })();
 })();
 </script>
 
-<!-- ============================================================
-     THE 3D MARK — from AEVERIS logo 3D (aeveris-logo-3d.js).
-     The metallic Aperture mark with a glowing spark, auto-rotating
-     over the video. Drag to rotate. Scroll-zoom is disabled so the
-     page still scrolls normally.
-     ============================================================ -->
-<script type="importmap">
-{
-  "imports": {
-    "three": "https://unpkg.com/three@0.184.0/build/three.module.js",
-    "three/addons/controls/OrbitControls.js": "https://unpkg.com/three@0.184.0/examples/jsm/controls/OrbitControls.js"
-  }
-}
-</script>
-
-<script type="module">
-import * as THREE from 'three';
-import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
-
-const host = document.getElementById('aeveris-3d');
-const prefersReducedMotion = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-const isMobileViewport = window.matchMedia && window.matchMedia('(max-width: 767px)').matches;
-
-let renderer;
-if(prefersReducedMotion || isMobileViewport){
-  document.body.classList.add('no-webgl');
-} else {
-  try {
-    renderer = new THREE.WebGLRenderer({ antialias:true, alpha:true, powerPreference:'high-performance' });
-    if(!renderer.getContext()) throw new Error('no webgl');
-  } catch(e){
-    document.body.classList.add('no-webgl');
-  }
-}
-
-if(renderer){
-  renderer.setPixelRatio(Math.min(devicePixelRatio, 2));
-  renderer.outputColorSpace = THREE.SRGBColorSpace;
-  renderer.toneMapping = THREE.ACESFilmicToneMapping;
-  renderer.toneMappingExposure = 1.05;
-  host.appendChild(renderer.domElement);
-
-  const scene = new THREE.Scene();
-  const camera = new THREE.PerspectiveCamera(38, 1, 0.1, 100);
-  camera.position.set(0.2, 0.1, 5.0);
-
-  // studio environment from a canvas gradient (metallic reflections)
-  const cnv = document.createElement('canvas'); cnv.width=64; cnv.height=256;
-  const cx = cnv.getContext('2d');
-  const grd = cx.createLinearGradient(0,0,0,256);
-  grd.addColorStop(0,'#dbe3ef'); grd.addColorStop(.32,'#aeb8c6'); grd.addColorStop(.55,'#3b4e78'); grd.addColorStop(1,'#0a1633');
-  cx.fillStyle=grd; cx.fillRect(0,0,64,256);
-  cx.fillStyle='rgba(255,255,255,.85)'; cx.fillRect(0,40,64,10);
-  const envTex = new THREE.CanvasTexture(cnv); envTex.mapping = THREE.EquirectangularReflectionMapping;
-  const pmrem = new THREE.PMREMGenerator(renderer);
-  scene.environment = pmrem.fromEquirectangular(envTex).texture;
-
-  // lights
-  scene.add(new THREE.HemisphereLight(0xdfe7f2, 0x0a1633, 0.6));
-  const key = new THREE.DirectionalLight(0xffffff, 1.2); key.position.set(3,4,5); scene.add(key);
-  const rim = new THREE.DirectionalLight(0x8fbaff, 0.9); rim.position.set(-4,1,-3); scene.add(rim);
-  const sparkLight = new THREE.PointLight(0x2E8CFF, 4, 6, 2); sparkLight.position.set(0,-0.95,0.3); scene.add(sparkLight);
-
-  // materials
-  const metal = new THREE.MeshStandardMaterial({color:0xc4cdda, metalness:1.0, roughness:0.28});
-  const metalEdge = new THREE.MeshStandardMaterial({color:0xe7ebf1, metalness:1.0, roughness:0.2});
-  const sparkMat = new THREE.MeshStandardMaterial({color:0xeaf4ff, emissive:0x2E8CFF, emissiveIntensity:2.4, metalness:0, roughness:0.3});
-
-  const DEPTH = 0.17;
-  function bar(x1,y1,x2,y2,thick,mat){
-    const dx=x2-x1, dy=y2-y1, len=Math.hypot(dx,dy);
-    const m = new THREE.Mesh(new THREE.BoxGeometry(len, thick, DEPTH), mat);
-    m.position.set((x1+x2)/2, (y1+y2)/2, 0);
-    m.rotation.z = Math.atan2(dy,dx);
-    return m;
-  }
-  function node(x,y,r,mat){ const m=new THREE.Mesh(new THREE.SphereGeometry(r,24,24),mat); m.position.set(x,y,0); return m; }
-  function spark(y){
-    const g = new THREE.Group();
-    g.add(node(0,y,0.15,sparkMat));
-    const glow = new THREE.Mesh(new THREE.SphereGeometry(0.34,24,24), new THREE.MeshBasicMaterial({color:0x2E8CFF,transparent:true,opacity:0.16,blending:THREE.AdditiveBlending,depthWrite:false}));
-    glow.position.set(0,y,0); g.add(glow);
-    return g;
-  }
-
-  function buildAperture(){
-    const g = new THREE.Group();
-    const chev = (ay, ex,ey, t, mat)=>{ g.add(bar(-ex,ey,0,ay,t,mat)); g.add(bar(0,ay,ex,ey,t,mat)); g.add(node(0,ay,t*0.62,mat)); };
-    chev(1.42, 1.24,-0.98, 0.15, metalEdge);
-    chev(0.74, 0.80,-0.88, 0.13, metal);
-    chev(0.10, 0.44,-0.78, 0.11, metal);
-    g.add(spark(-0.98));
-    return g;
-  }
-
-  const mark = buildAperture();
-  scene.add(mark);
-
-  const controls = new OrbitControls(camera, renderer.domElement);
-  controls.enableDamping = true; controls.dampingFactor = 0.08;
-  controls.enablePan = false; controls.enableZoom = false;      // keep page scroll working
-  controls.autoRotate = true; controls.autoRotateSpeed = 1.1;
-  controls.target.set(0,0.05,0);
-
-  function resize(){
-    const w=host.clientWidth, h=host.clientHeight;
-    if(!w || !h) return;
-    renderer.setSize(w,h);
-    camera.aspect=w/h; camera.updateProjectionMatrix();
-  }
-  new ResizeObserver(resize).observe(host); resize();
-
-  const clock = new THREE.Clock();
-  let rafId = null;
-  let heroVisible = true;
-
-  function render(){
-    const t = clock.getElapsedTime();
-    mark.position.y = Math.sin(t*0.9)*0.04;
-    sparkMat.emissiveIntensity = 2.0 + Math.sin(t*2.2)*0.8;
-    sparkLight.intensity = 3 + Math.sin(t*2.2)*1.4;
-    controls.update();
-    renderer.render(scene,camera);
-    if(heroVisible && !document.hidden){
-      rafId = requestAnimationFrame(render);
-    } else {
-      rafId = null;
-    }
-  }
-
-  function resumeRender(){
-    if(rafId === null && heroVisible && !document.hidden){
-      rafId = requestAnimationFrame(render);
-    }
-  }
-
-  const heroEl = document.getElementById('hero');
-  if(heroEl){
-    new IntersectionObserver(entries => {
-      heroVisible = entries[0].isIntersecting;
-      resumeRender();
-    }, { threshold:0 }).observe(heroEl);
-  }
-  document.addEventListener('visibilitychange', resumeRender);
-
-  resumeRender();
-}
-
-// scroll reveals
-const io = new IntersectionObserver(entries => {
-  entries.forEach(en => { if(en.isIntersecting){ en.target.classList.add('is-in'); io.unobserve(en.target); } });
-}, { threshold:0.15 });
-document.querySelectorAll('.reveal').forEach(el => io.observe(el));
-
-// parallax backdrop — Architecture section
-const parallaxEl = document.querySelector('.brands__parallax');
-if(parallaxEl && !window.matchMedia('(prefers-reduced-motion: reduce)').matches){
-  const section = parallaxEl.closest('.band');
-  let ticking = false;
-  function updateParallax(){
-    const rect = section.getBoundingClientRect();
-    const progress = (rect.top + rect.height / 2 - window.innerHeight / 2) / window.innerHeight;
-    parallaxEl.style.transform = `translateY(${progress * -36}px)`;
-    ticking = false;
-  }
-  window.addEventListener('scroll', () => {
-    if(!ticking){ ticking = true; requestAnimationFrame(updateParallax); }
-  }, { passive:true });
-  updateParallax();
-}
-</script>
 </body>
 </html>
